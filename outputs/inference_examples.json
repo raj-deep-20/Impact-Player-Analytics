@@ -1,0 +1,180 @@
+{
+  "substitution_recommendation": {
+    "match_context": "IPL 2025 | Chinnaswamy | Over 16 | Chasing 185",
+    "prediction": {
+      "sub_probability": 0.009186414282623066,
+      "no_sub_probability": 0.990813585717377,
+      "recommend_sub": false
+    },
+    "shap_explanation": [
+      {
+        "feature": "is_chasing",
+        "value": 1.0,
+        "shap_value": -0.0125,
+        "direction": "\u2193",
+        "importance": 0.1462945966466913
+      },
+      {
+        "feature": "sub_form",
+        "value": 0.94,
+        "shap_value": 0.0071,
+        "direction": "\u2191",
+        "importance": 0.015877555000704615
+      },
+      {
+        "feature": "pp_runs",
+        "value": 52.0,
+        "shap_value": 0.0068,
+        "direction": "\u2191",
+        "importance": 0.026855792460256822
+      },
+      {
+        "feature": "last3_wickets",
+        "value": 2.0,
+        "shap_value": 0.0042,
+        "direction": "\u2191",
+        "importance": 0.0018430726865347113
+      },
+      {
+        "feature": "current_rpo",
+        "value": 9.25,
+        "shap_value": 0.004,
+        "direction": "\u2191",
+        "importance": 0.03610811428223525
+      },
+      {
+        "feature": "over_num",
+        "value": 16.0,
+        "shap_value": 0.0035,
+        "direction": "\u2191",
+        "importance": 0.04483314895549671
+      }
+    ],
+    "win_prob_lift_if_sub": 0.001
+  },
+  "fantasy_top5": [
+    {
+      "player": "Hardik Pandya",
+      "team": "Mumbai Indians",
+      "player_type": "allrounder",
+      "auction_price_cr": 15.0,
+      "predicted_pts": 43.6,
+      "confidence": 0.928,
+      "fantasy_pts_avg": 43.5,
+      "roi_score": 2.9
+    },
+    {
+      "player": "Tilak Varma",
+      "team": "Mumbai Indians",
+      "player_type": "middle_order",
+      "auction_price_cr": 8.5,
+      "predicted_pts": 43.2,
+      "confidence": 0.928,
+      "fantasy_pts_avg": 43.3,
+      "roi_score": 5.1
+    },
+    {
+      "player": "Harshal Patel",
+      "team": "Royal Challengers Bengaluru",
+      "player_type": "pace_death",
+      "auction_price_cr": 11.75,
+      "predicted_pts": 37.2,
+      "confidence": 0.916,
+      "fantasy_pts_avg": 37.4,
+      "roi_score": 3.18
+    },
+    {
+      "player": "Suryakumar Yadav",
+      "team": "Mumbai Indians",
+      "player_type": "finisher",
+      "auction_price_cr": 16.35,
+      "predicted_pts": 34.4,
+      "confidence": 0.909,
+      "fantasy_pts_avg": 34.4,
+      "roi_score": 2.1
+    },
+    {
+      "player": "Jasprit Bumrah",
+      "team": "Mumbai Indians",
+      "player_type": "pace_death",
+      "auction_price_cr": 18.0,
+      "predicted_pts": 34.2,
+      "confidence": 0.908,
+      "fantasy_pts_avg": 34.3,
+      "roi_score": 1.91
+    }
+  ],
+  "model_metrics": {
+    "classifier": {
+      "cv_roc_auc_mean": 0.9254,
+      "cv_roc_auc_std": 0.0275,
+      "top_features": [
+        "required_rpo",
+        "is_chasing",
+        "cum_runs",
+        "win_prob_pre",
+        "last3_rpo",
+        "over_num",
+        "balls_remaining",
+        "current_rpo"
+      ],
+      "feature_importance": {
+        "required_rpo": 0.33053,
+        "is_chasing": 0.14629,
+        "cum_runs": 0.11743,
+        "win_prob_pre": 0.10539,
+        "last3_rpo": 0.04603,
+        "over_num": 0.04483,
+        "balls_remaining": 0.04204,
+        "current_rpo": 0.03611,
+        "pp_runs": 0.02686,
+        "sub_form": 0.01588,
+        "cum_wickets": 0.015,
+        "boundary_rate": 0.01302,
+        "sub_auction_val": 0.0122,
+        "pp_wickets": 0.01184,
+        "wickets_remaining": 0.01155,
+        "venue_factor": 0.00743,
+        "venue_avg_score": 0.00665,
+        "sub_player_type": 0.00481,
+        "last3_wickets": 0.00184,
+        "is_wankhede": 0.00165,
+        "season_year": 0.0016,
+        "rate_differential": 0.00098,
+        "phase_int": 3e-05,
+        "is_chinnaswamy": 0.0,
+        "has_impact_rule": 0.0
+      }
+    },
+    "regressor": {
+      "cv_mae_mean": 3.13,
+      "cv_mae_std": 0.81,
+      "top_features": [
+        "perf_index",
+        "auction_price_cr",
+        "batting_avg",
+        "matches",
+        "bowling_contribution",
+        "value_per_cr",
+        "form_trajectory",
+        "economy"
+      ],
+      "feature_importance": {
+        "perf_index": 0.54318,
+        "auction_price_cr": 0.10819,
+        "batting_avg": 0.10585,
+        "matches": 0.06116,
+        "bowling_contribution": 0.05156,
+        "value_per_cr": 0.04049,
+        "form_trajectory": 0.02427,
+        "economy": 0.01767,
+        "sixes_per_match": 0.01448,
+        "batting_contribution": 0.0081,
+        "season": 0.00711,
+        "strike_rate": 0.00641,
+        "player_type_int": 0.00621,
+        "form_score": 0.00533
+      }
+    }
+  }
+}

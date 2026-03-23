@@ -1,0 +1,301 @@
+match_id,season,date,venue,city,team1,team2,toss_winner,toss_decision,batting_first,team1_score,team2_score,winner,has_impact_rule,impact_sub_over_inn1,impact_player_in,venue_pitch_factor
+1,2020,2020-04-09,Sawai Mansingh Stadium,Jaipur,Mumbai Indians,Royal Challengers Bengaluru,Mumbai Indians,bat,Mumbai Indians,236,242,Royal Challengers Bengaluru,0,,,1.1
+2,2020,2020-04-02,Rajiv Gandhi Intl,Hyderabad,Royal Challengers Bengaluru,Punjab Kings,Punjab Kings,bat,Punjab Kings,259,260,Royal Challengers Bengaluru,0,,,1.12
+3,2020,2020-04-28,Arun Jaitley Stadium,Delhi,Mumbai Indians,Delhi Capitals,Delhi Capitals,bat,Delhi Capitals,301,199,Delhi Capitals,0,,,1.08
+4,2020,2020-04-17,BRSABV Ekana Stadium,Lucknow,Chennai Super Kings,Delhi Capitals,Delhi Capitals,field,Chennai Super Kings,259,219,Chennai Super Kings,0,,,0.95
+5,2020,2020-04-27,Rajiv Gandhi Intl,Hyderabad,Delhi Capitals,Punjab Kings,Punjab Kings,field,Delhi Capitals,256,260,Punjab Kings,0,,,1.12
+6,2020,2020-04-19,Wankhede Stadium,Mumbai,Mumbai Indians,Delhi Capitals,Delhi Capitals,field,Mumbai Indians,303,259,Mumbai Indians,0,,,1.18
+7,2020,2020-05-07,Arun Jaitley Stadium,Delhi,Sunrisers Hyderabad,Delhi Capitals,Sunrisers Hyderabad,bat,Sunrisers Hyderabad,266,220,Sunrisers Hyderabad,0,,,1.08
+8,2020,2020-05-09,BRSABV Ekana Stadium,Lucknow,Chennai Super Kings,Royal Challengers Bengaluru,Royal Challengers Bengaluru,bat,Royal Challengers Bengaluru,246,238,Royal Challengers Bengaluru,0,,,0.95
+9,2020,2020-04-10,Arun Jaitley Stadium,Delhi,Punjab Kings,Delhi Capitals,Delhi Capitals,field,Punjab Kings,288,219,Punjab Kings,0,,,1.08
+10,2020,2020-04-29,M Chinnaswamy Stadium,Bengaluru,Rajasthan Royals,Kolkata Knight Riders,Kolkata Knight Riders,bat,Kolkata Knight Riders,284,275,Kolkata Knight Riders,0,,,1.25
+11,2020,2020-05-08,Rajiv Gandhi Intl,Hyderabad,Kolkata Knight Riders,Royal Challengers Bengaluru,Royal Challengers Bengaluru,bat,Royal Challengers Bengaluru,218,220,Kolkata Knight Riders,0,,,1.12
+12,2020,2020-04-11,Wankhede Stadium,Mumbai,Kolkata Knight Riders,Royal Challengers Bengaluru,Royal Challengers Bengaluru,bat,Royal Challengers Bengaluru,263,257,Royal Challengers Bengaluru,0,,,1.18
+13,2020,2020-05-01,Sawai Mansingh Stadium,Jaipur,Rajasthan Royals,Chennai Super Kings,Rajasthan Royals,bat,Rajasthan Royals,254,246,Rajasthan Royals,0,,,1.1
+14,2020,2020-05-05,MA Chidambaram Stadium,Chennai,Delhi Capitals,Royal Challengers Bengaluru,Delhi Capitals,field,Royal Challengers Bengaluru,249,243,Royal Challengers Bengaluru,0,,,0.88
+15,2020,2020-05-09,Eden Gardens,Kolkata,Mumbai Indians,Rajasthan Royals,Rajasthan Royals,bat,Rajasthan Royals,230,234,Mumbai Indians,0,,,1.05
+16,2020,2020-04-18,MA Chidambaram Stadium,Chennai,Mumbai Indians,Delhi Capitals,Delhi Capitals,bat,Delhi Capitals,284,210,Delhi Capitals,0,,,0.88
+17,2020,2020-05-05,Rajiv Gandhi Intl,Hyderabad,Mumbai Indians,Delhi Capitals,Delhi Capitals,bat,Delhi Capitals,225,227,Mumbai Indians,0,,,1.12
+18,2020,2020-04-26,BRSABV Ekana Stadium,Lucknow,Mumbai Indians,Delhi Capitals,Mumbai Indians,field,Delhi Capitals,232,235,Mumbai Indians,0,,,0.95
+19,2020,2020-04-03,Sawai Mansingh Stadium,Jaipur,Chennai Super Kings,Royal Challengers Bengaluru,Chennai Super Kings,field,Royal Challengers Bengaluru,221,224,Chennai Super Kings,0,,,1.1
+20,2020,2020-04-24,Arun Jaitley Stadium,Delhi,Delhi Capitals,Kolkata Knight Riders,Kolkata Knight Riders,bat,Kolkata Knight Riders,229,231,Delhi Capitals,0,,,1.08
+21,2020,2020-04-22,Narendra Modi Stadium,Ahmedabad,Royal Challengers Bengaluru,Mumbai Indians,Mumbai Indians,field,Royal Challengers Bengaluru,261,246,Royal Challengers Bengaluru,0,,,1.02
+22,2020,2020-03-26,Rajiv Gandhi Intl,Hyderabad,Mumbai Indians,Rajasthan Royals,Rajasthan Royals,bat,Rajasthan Royals,223,224,Mumbai Indians,0,,,1.12
+23,2020,2020-04-11,M Chinnaswamy Stadium,Bengaluru,Sunrisers Hyderabad,Kolkata Knight Riders,Kolkata Knight Riders,bat,Kolkata Knight Riders,269,229,Kolkata Knight Riders,0,,,1.25
+24,2020,2020-03-29,BRSABV Ekana Stadium,Lucknow,Punjab Kings,Royal Challengers Bengaluru,Punjab Kings,field,Royal Challengers Bengaluru,244,248,Punjab Kings,0,,,0.95
+25,2020,2020-04-01,M Chinnaswamy Stadium,Bengaluru,Chennai Super Kings,Punjab Kings,Chennai Super Kings,field,Punjab Kings,269,261,Punjab Kings,0,,,1.25
+26,2020,2020-04-29,BRSABV Ekana Stadium,Lucknow,Mumbai Indians,Sunrisers Hyderabad,Sunrisers Hyderabad,bat,Sunrisers Hyderabad,224,228,Mumbai Indians,0,,,0.95
+27,2020,2020-03-29,Wankhede Stadium,Mumbai,Royal Challengers Bengaluru,Rajasthan Royals,Royal Challengers Bengaluru,bat,Royal Challengers Bengaluru,251,253,Rajasthan Royals,0,,,1.18
+28,2020,2020-04-04,MA Chidambaram Stadium,Chennai,Sunrisers Hyderabad,Mumbai Indians,Sunrisers Hyderabad,bat,Sunrisers Hyderabad,216,217,Mumbai Indians,0,,,0.88
+29,2020,2020-05-07,MA Chidambaram Stadium,Chennai,Royal Challengers Bengaluru,Kolkata Knight Riders,Royal Challengers Bengaluru,field,Kolkata Knight Riders,249,250,Royal Challengers Bengaluru,0,,,0.88
+30,2020,2020-04-07,MA Chidambaram Stadium,Chennai,Sunrisers Hyderabad,Chennai Super Kings,Sunrisers Hyderabad,field,Chennai Super Kings,247,235,Chennai Super Kings,0,,,0.88
+31,2020,2020-04-25,Arun Jaitley Stadium,Delhi,Sunrisers Hyderabad,Punjab Kings,Punjab Kings,field,Sunrisers Hyderabad,252,235,Sunrisers Hyderabad,0,,,1.08
+32,2020,2020-04-08,Arun Jaitley Stadium,Delhi,Royal Challengers Bengaluru,Delhi Capitals,Delhi Capitals,bat,Delhi Capitals,239,240,Royal Challengers Bengaluru,0,,,1.08
+33,2020,2020-04-18,MA Chidambaram Stadium,Chennai,Kolkata Knight Riders,Mumbai Indians,Kolkata Knight Riders,field,Mumbai Indians,239,222,Mumbai Indians,0,,,0.88
+34,2020,2020-04-08,Rajiv Gandhi Intl,Hyderabad,Delhi Capitals,Mumbai Indians,Mumbai Indians,bat,Mumbai Indians,209,215,Delhi Capitals,0,,,1.12
+35,2020,2020-04-05,MA Chidambaram Stadium,Chennai,Sunrisers Hyderabad,Punjab Kings,Sunrisers Hyderabad,bat,Sunrisers Hyderabad,251,224,Sunrisers Hyderabad,0,,,0.88
+36,2020,2020-05-01,BRSABV Ekana Stadium,Lucknow,Rajasthan Royals,Punjab Kings,Punjab Kings,field,Rajasthan Royals,223,225,Punjab Kings,0,,,0.95
+37,2020,2020-03-27,Sawai Mansingh Stadium,Jaipur,Mumbai Indians,Kolkata Knight Riders,Mumbai Indians,field,Kolkata Knight Riders,242,223,Kolkata Knight Riders,0,,,1.1
+38,2020,2020-04-14,M Chinnaswamy Stadium,Bengaluru,Mumbai Indians,Sunrisers Hyderabad,Mumbai Indians,bat,Mumbai Indians,270,260,Mumbai Indians,0,,,1.25
+39,2020,2020-05-08,M Chinnaswamy Stadium,Bengaluru,Rajasthan Royals,Chennai Super Kings,Chennai Super Kings,field,Rajasthan Royals,277,217,Rajasthan Royals,0,,,1.25
+40,2020,2020-04-10,Arun Jaitley Stadium,Delhi,Punjab Kings,Chennai Super Kings,Chennai Super Kings,bat,Chennai Super Kings,214,219,Punjab Kings,0,,,1.08
+41,2020,2020-04-30,Eden Gardens,Kolkata,Delhi Capitals,Kolkata Knight Riders,Kolkata Knight Riders,bat,Kolkata Knight Riders,231,232,Delhi Capitals,0,,,1.05
+42,2020,2020-04-12,BRSABV Ekana Stadium,Lucknow,Mumbai Indians,Chennai Super Kings,Mumbai Indians,bat,Mumbai Indians,278,235,Mumbai Indians,0,,,0.95
+43,2020,2020-03-30,M Chinnaswamy Stadium,Bengaluru,Royal Challengers Bengaluru,Delhi Capitals,Delhi Capitals,field,Royal Challengers Bengaluru,252,247,Royal Challengers Bengaluru,0,,,1.25
+44,2020,2020-04-24,BRSABV Ekana Stadium,Lucknow,Chennai Super Kings,Kolkata Knight Riders,Kolkata Knight Riders,bat,Kolkata Knight Riders,196,199,Chennai Super Kings,0,,,0.95
+45,2020,2020-05-03,Rajiv Gandhi Intl,Hyderabad,Chennai Super Kings,Sunrisers Hyderabad,Chennai Super Kings,field,Sunrisers Hyderabad,250,251,Chennai Super Kings,0,,,1.12
+46,2020,2020-04-14,M Chinnaswamy Stadium,Bengaluru,Punjab Kings,Rajasthan Royals,Punjab Kings,bat,Punjab Kings,250,255,Rajasthan Royals,0,,,1.25
+47,2020,2020-04-27,Arun Jaitley Stadium,Delhi,Sunrisers Hyderabad,Chennai Super Kings,Sunrisers Hyderabad,field,Chennai Super Kings,279,226,Chennai Super Kings,0,,,1.08
+48,2020,2020-04-08,Sawai Mansingh Stadium,Jaipur,Kolkata Knight Riders,Delhi Capitals,Delhi Capitals,field,Kolkata Knight Riders,270,267,Kolkata Knight Riders,0,,,1.1
+49,2020,2020-05-07,Sawai Mansingh Stadium,Jaipur,Punjab Kings,Chennai Super Kings,Chennai Super Kings,field,Punjab Kings,240,233,Punjab Kings,0,,,1.1
+50,2020,2020-04-13,Rajiv Gandhi Intl,Hyderabad,Rajasthan Royals,Chennai Super Kings,Rajasthan Royals,bat,Rajasthan Royals,270,275,Chennai Super Kings,0,,,1.12
+51,2021,2021-04-07,M Chinnaswamy Stadium,Bengaluru,Mumbai Indians,Kolkata Knight Riders,Mumbai Indians,field,Kolkata Knight Riders,252,254,Mumbai Indians,0,,,1.25
+52,2021,2021-04-12,Wankhede Stadium,Mumbai,Punjab Kings,Kolkata Knight Riders,Kolkata Knight Riders,field,Punjab Kings,251,252,Kolkata Knight Riders,0,,,1.18
+53,2021,2021-04-12,M Chinnaswamy Stadium,Bengaluru,Punjab Kings,Kolkata Knight Riders,Punjab Kings,bat,Punjab Kings,253,249,Punjab Kings,0,,,1.25
+54,2021,2021-04-25,M Chinnaswamy Stadium,Bengaluru,Kolkata Knight Riders,Mumbai Indians,Kolkata Knight Riders,bat,Kolkata Knight Riders,307,287,Kolkata Knight Riders,0,,,1.25
+55,2021,2021-04-03,Wankhede Stadium,Mumbai,Mumbai Indians,Royal Challengers Bengaluru,Royal Challengers Bengaluru,field,Mumbai Indians,252,253,Royal Challengers Bengaluru,0,,,1.18
+56,2021,2021-04-07,BRSABV Ekana Stadium,Lucknow,Chennai Super Kings,Delhi Capitals,Chennai Super Kings,bat,Chennai Super Kings,255,242,Chennai Super Kings,0,,,0.95
+57,2021,2021-03-27,MA Chidambaram Stadium,Chennai,Punjab Kings,Mumbai Indians,Mumbai Indians,bat,Mumbai Indians,230,232,Punjab Kings,0,,,0.88
+58,2021,2021-04-18,Sawai Mansingh Stadium,Jaipur,Rajasthan Royals,Mumbai Indians,Mumbai Indians,bat,Mumbai Indians,211,212,Rajasthan Royals,0,,,1.1
+59,2021,2021-04-26,Sawai Mansingh Stadium,Jaipur,Chennai Super Kings,Royal Challengers Bengaluru,Royal Challengers Bengaluru,bat,Royal Challengers Bengaluru,278,221,Royal Challengers Bengaluru,0,,,1.1
+60,2021,2021-05-07,MA Chidambaram Stadium,Chennai,Delhi Capitals,Royal Challengers Bengaluru,Royal Challengers Bengaluru,field,Delhi Capitals,247,208,Delhi Capitals,0,,,0.88
+61,2021,2021-04-03,MA Chidambaram Stadium,Chennai,Sunrisers Hyderabad,Delhi Capitals,Sunrisers Hyderabad,bat,Sunrisers Hyderabad,258,205,Sunrisers Hyderabad,0,,,0.88
+62,2021,2021-04-06,Narendra Modi Stadium,Ahmedabad,Royal Challengers Bengaluru,Sunrisers Hyderabad,Sunrisers Hyderabad,bat,Sunrisers Hyderabad,256,233,Sunrisers Hyderabad,0,,,1.02
+63,2021,2021-04-11,MA Chidambaram Stadium,Chennai,Royal Challengers Bengaluru,Sunrisers Hyderabad,Sunrisers Hyderabad,field,Royal Challengers Bengaluru,278,226,Royal Challengers Bengaluru,0,,,0.88
+64,2021,2021-05-09,M Chinnaswamy Stadium,Bengaluru,Punjab Kings,Rajasthan Royals,Punjab Kings,field,Rajasthan Royals,248,254,Punjab Kings,0,,,1.25
+65,2021,2021-03-29,Narendra Modi Stadium,Ahmedabad,Chennai Super Kings,Rajasthan Royals,Rajasthan Royals,bat,Rajasthan Royals,247,252,Chennai Super Kings,0,,,1.02
+66,2021,2021-04-17,M Chinnaswamy Stadium,Bengaluru,Delhi Capitals,Kolkata Knight Riders,Delhi Capitals,field,Kolkata Knight Riders,279,250,Kolkata Knight Riders,0,,,1.25
+67,2021,2021-04-16,Narendra Modi Stadium,Ahmedabad,Royal Challengers Bengaluru,Punjab Kings,Royal Challengers Bengaluru,bat,Royal Challengers Bengaluru,267,228,Royal Challengers Bengaluru,0,,,1.02
+68,2021,2021-04-05,Sawai Mansingh Stadium,Jaipur,Sunrisers Hyderabad,Royal Challengers Bengaluru,Royal Challengers Bengaluru,bat,Royal Challengers Bengaluru,222,214,Royal Challengers Bengaluru,0,,,1.1
+69,2021,2021-04-28,Eden Gardens,Kolkata,Chennai Super Kings,Kolkata Knight Riders,Chennai Super Kings,bat,Chennai Super Kings,268,253,Chennai Super Kings,0,,,1.05
+70,2021,2021-04-10,BRSABV Ekana Stadium,Lucknow,Mumbai Indians,Sunrisers Hyderabad,Sunrisers Hyderabad,bat,Sunrisers Hyderabad,254,258,Mumbai Indians,0,,,0.95
+71,2021,2021-04-24,Eden Gardens,Kolkata,Mumbai Indians,Sunrisers Hyderabad,Mumbai Indians,bat,Mumbai Indians,233,222,Mumbai Indians,0,,,1.05
+72,2021,2021-05-08,Eden Gardens,Kolkata,Kolkata Knight Riders,Mumbai Indians,Kolkata Knight Riders,bat,Kolkata Knight Riders,232,236,Mumbai Indians,0,,,1.05
+73,2021,2021-04-14,Sawai Mansingh Stadium,Jaipur,Punjab Kings,Rajasthan Royals,Punjab Kings,field,Rajasthan Royals,288,250,Rajasthan Royals,0,,,1.1
+74,2021,2021-04-14,Narendra Modi Stadium,Ahmedabad,Punjab Kings,Royal Challengers Bengaluru,Royal Challengers Bengaluru,bat,Royal Challengers Bengaluru,251,229,Royal Challengers Bengaluru,0,,,1.02
+75,2021,2021-04-16,Arun Jaitley Stadium,Delhi,Rajasthan Royals,Chennai Super Kings,Rajasthan Royals,bat,Rajasthan Royals,259,262,Chennai Super Kings,0,,,1.08
+76,2021,2021-04-20,Eden Gardens,Kolkata,Delhi Capitals,Rajasthan Royals,Delhi Capitals,bat,Delhi Capitals,272,262,Delhi Capitals,0,,,1.05
+77,2021,2021-03-28,Sawai Mansingh Stadium,Jaipur,Chennai Super Kings,Delhi Capitals,Delhi Capitals,field,Chennai Super Kings,273,263,Chennai Super Kings,0,,,1.1
+78,2021,2021-04-07,BRSABV Ekana Stadium,Lucknow,Chennai Super Kings,Kolkata Knight Riders,Chennai Super Kings,bat,Chennai Super Kings,261,248,Chennai Super Kings,0,,,0.95
+79,2021,2021-05-04,M Chinnaswamy Stadium,Bengaluru,Punjab Kings,Sunrisers Hyderabad,Punjab Kings,field,Sunrisers Hyderabad,276,264,Sunrisers Hyderabad,0,,,1.25
+80,2021,2021-04-20,Narendra Modi Stadium,Ahmedabad,Royal Challengers Bengaluru,Delhi Capitals,Delhi Capitals,bat,Delhi Capitals,256,221,Delhi Capitals,0,,,1.02
+81,2021,2021-04-18,Narendra Modi Stadium,Ahmedabad,Sunrisers Hyderabad,Rajasthan Royals,Sunrisers Hyderabad,field,Rajasthan Royals,243,244,Sunrisers Hyderabad,0,,,1.02
+82,2021,2021-04-03,Arun Jaitley Stadium,Delhi,Chennai Super Kings,Royal Challengers Bengaluru,Royal Challengers Bengaluru,bat,Royal Challengers Bengaluru,247,220,Royal Challengers Bengaluru,0,,,1.08
+83,2021,2021-05-01,BRSABV Ekana Stadium,Lucknow,Rajasthan Royals,Mumbai Indians,Rajasthan Royals,bat,Rajasthan Royals,286,235,Rajasthan Royals,0,,,0.95
+84,2021,2021-04-20,BRSABV Ekana Stadium,Lucknow,Punjab Kings,Sunrisers Hyderabad,Punjab Kings,field,Sunrisers Hyderabad,291,286,Sunrisers Hyderabad,0,,,0.95
+85,2021,2021-04-03,Arun Jaitley Stadium,Delhi,Kolkata Knight Riders,Chennai Super Kings,Kolkata Knight Riders,field,Chennai Super Kings,289,247,Chennai Super Kings,0,,,1.08
+86,2021,2021-04-30,Wankhede Stadium,Mumbai,Kolkata Knight Riders,Royal Challengers Bengaluru,Royal Challengers Bengaluru,field,Kolkata Knight Riders,261,264,Royal Challengers Bengaluru,0,,,1.18
+87,2021,2021-04-07,MA Chidambaram Stadium,Chennai,Sunrisers Hyderabad,Rajasthan Royals,Sunrisers Hyderabad,field,Rajasthan Royals,290,248,Rajasthan Royals,0,,,0.88
+88,2021,2021-04-05,Arun Jaitley Stadium,Delhi,Kolkata Knight Riders,Mumbai Indians,Mumbai Indians,field,Kolkata Knight Riders,241,242,Mumbai Indians,0,,,1.08
+89,2021,2021-04-22,Wankhede Stadium,Mumbai,Delhi Capitals,Punjab Kings,Punjab Kings,bat,Punjab Kings,244,248,Delhi Capitals,0,,,1.18
+90,2021,2021-04-02,Arun Jaitley Stadium,Delhi,Rajasthan Royals,Chennai Super Kings,Chennai Super Kings,field,Rajasthan Royals,254,255,Chennai Super Kings,0,,,1.08
+91,2021,2021-03-25,Eden Gardens,Kolkata,Mumbai Indians,Royal Challengers Bengaluru,Mumbai Indians,field,Royal Challengers Bengaluru,230,232,Mumbai Indians,0,,,1.05
+92,2021,2021-04-24,MA Chidambaram Stadium,Chennai,Sunrisers Hyderabad,Delhi Capitals,Sunrisers Hyderabad,bat,Sunrisers Hyderabad,259,235,Sunrisers Hyderabad,0,,,0.88
+93,2021,2021-04-29,Narendra Modi Stadium,Ahmedabad,Chennai Super Kings,Sunrisers Hyderabad,Chennai Super Kings,field,Sunrisers Hyderabad,258,251,Sunrisers Hyderabad,0,,,1.02
+94,2021,2021-04-03,Arun Jaitley Stadium,Delhi,Sunrisers Hyderabad,Royal Challengers Bengaluru,Sunrisers Hyderabad,field,Royal Challengers Bengaluru,292,289,Royal Challengers Bengaluru,0,,,1.08
+95,2021,2021-05-08,Eden Gardens,Kolkata,Kolkata Knight Riders,Chennai Super Kings,Kolkata Knight Riders,field,Chennai Super Kings,216,219,Kolkata Knight Riders,0,,,1.05
+96,2021,2021-05-08,Eden Gardens,Kolkata,Kolkata Knight Riders,Delhi Capitals,Delhi Capitals,bat,Delhi Capitals,257,243,Delhi Capitals,0,,,1.05
+97,2021,2021-04-23,Sawai Mansingh Stadium,Jaipur,Punjab Kings,Sunrisers Hyderabad,Sunrisers Hyderabad,bat,Sunrisers Hyderabad,261,262,Punjab Kings,0,,,1.1
+98,2021,2021-04-12,MA Chidambaram Stadium,Chennai,Punjab Kings,Delhi Capitals,Delhi Capitals,field,Punjab Kings,261,246,Punjab Kings,0,,,0.88
+99,2021,2021-04-10,Wankhede Stadium,Mumbai,Rajasthan Royals,Chennai Super Kings,Chennai Super Kings,bat,Chennai Super Kings,331,283,Chennai Super Kings,0,,,1.18
+100,2021,2021-03-28,Arun Jaitley Stadium,Delhi,Kolkata Knight Riders,Royal Challengers Bengaluru,Kolkata Knight Riders,bat,Kolkata Knight Riders,250,251,Royal Challengers Bengaluru,0,,,1.08
+101,2022,2022-04-22,Eden Gardens,Kolkata,Gujarat Titans,Rajasthan Royals,Gujarat Titans,bat,Gujarat Titans,261,262,Rajasthan Royals,0,,,1.05
+102,2022,2022-04-22,BRSABV Ekana Stadium,Lucknow,Gujarat Titans,Lucknow Super Giants,Gujarat Titans,field,Lucknow Super Giants,247,250,Gujarat Titans,0,,,0.95
+103,2022,2022-03-25,Sawai Mansingh Stadium,Jaipur,Lucknow Super Giants,Rajasthan Royals,Rajasthan Royals,bat,Rajasthan Royals,265,248,Rajasthan Royals,0,,,1.1
+104,2022,2022-04-13,Wankhede Stadium,Mumbai,Lucknow Super Giants,Rajasthan Royals,Rajasthan Royals,field,Lucknow Super Giants,271,253,Lucknow Super Giants,0,,,1.18
+105,2022,2022-05-06,Rajiv Gandhi Intl,Hyderabad,Kolkata Knight Riders,Sunrisers Hyderabad,Kolkata Knight Riders,bat,Kolkata Knight Riders,249,251,Sunrisers Hyderabad,0,,,1.12
+106,2022,2022-04-30,Narendra Modi Stadium,Ahmedabad,Rajasthan Royals,Punjab Kings,Rajasthan Royals,bat,Rajasthan Royals,263,252,Rajasthan Royals,0,,,1.02
+107,2022,2022-04-12,Rajiv Gandhi Intl,Hyderabad,Sunrisers Hyderabad,Lucknow Super Giants,Sunrisers Hyderabad,field,Lucknow Super Giants,252,253,Sunrisers Hyderabad,0,,,1.12
+108,2022,2022-04-19,Eden Gardens,Kolkata,Delhi Capitals,Sunrisers Hyderabad,Sunrisers Hyderabad,bat,Sunrisers Hyderabad,210,212,Delhi Capitals,0,,,1.05
+109,2022,2022-04-03,Wankhede Stadium,Mumbai,Delhi Capitals,Punjab Kings,Delhi Capitals,field,Punjab Kings,296,235,Punjab Kings,0,,,1.18
+110,2022,2022-04-14,Sawai Mansingh Stadium,Jaipur,Punjab Kings,Rajasthan Royals,Rajasthan Royals,bat,Rajasthan Royals,251,256,Punjab Kings,0,,,1.1
+111,2022,2022-04-03,Rajiv Gandhi Intl,Hyderabad,Chennai Super Kings,Rajasthan Royals,Chennai Super Kings,field,Rajasthan Royals,218,224,Chennai Super Kings,0,,,1.12
+112,2022,2022-04-02,Arun Jaitley Stadium,Delhi,Rajasthan Royals,Gujarat Titans,Rajasthan Royals,field,Gujarat Titans,240,237,Gujarat Titans,0,,,1.08
+113,2022,2022-04-26,Eden Gardens,Kolkata,Gujarat Titans,Delhi Capitals,Delhi Capitals,bat,Delhi Capitals,258,259,Gujarat Titans,0,,,1.05
+114,2022,2022-03-31,BRSABV Ekana Stadium,Lucknow,Punjab Kings,Delhi Capitals,Delhi Capitals,field,Punjab Kings,208,209,Delhi Capitals,0,,,0.95
+115,2022,2022-04-08,MA Chidambaram Stadium,Chennai,Lucknow Super Giants,Kolkata Knight Riders,Lucknow Super Giants,field,Kolkata Knight Riders,233,236,Lucknow Super Giants,0,,,0.88
+116,2022,2022-04-14,Eden Gardens,Kolkata,Mumbai Indians,Chennai Super Kings,Chennai Super Kings,bat,Chennai Super Kings,223,224,Mumbai Indians,0,,,1.05
+117,2022,2022-04-16,Sawai Mansingh Stadium,Jaipur,Rajasthan Royals,Sunrisers Hyderabad,Sunrisers Hyderabad,field,Rajasthan Royals,274,221,Rajasthan Royals,0,,,1.1
+118,2022,2022-04-28,M Chinnaswamy Stadium,Bengaluru,Rajasthan Royals,Lucknow Super Giants,Lucknow Super Giants,field,Rajasthan Royals,256,259,Lucknow Super Giants,0,,,1.25
+119,2022,2022-04-15,MA Chidambaram Stadium,Chennai,Delhi Capitals,Gujarat Titans,Delhi Capitals,bat,Delhi Capitals,228,231,Gujarat Titans,0,,,0.88
+120,2022,2022-04-06,BRSABV Ekana Stadium,Lucknow,Punjab Kings,Royal Challengers Bengaluru,Royal Challengers Bengaluru,field,Punjab Kings,277,230,Punjab Kings,0,,,0.95
+121,2022,2022-04-30,BRSABV Ekana Stadium,Lucknow,Kolkata Knight Riders,Chennai Super Kings,Kolkata Knight Riders,bat,Kolkata Knight Riders,230,231,Chennai Super Kings,0,,,0.95
+122,2022,2022-03-28,Wankhede Stadium,Mumbai,Lucknow Super Giants,Royal Challengers Bengaluru,Royal Challengers Bengaluru,bat,Royal Challengers Bengaluru,300,258,Royal Challengers Bengaluru,0,,,1.18
+123,2022,2022-04-02,MA Chidambaram Stadium,Chennai,Gujarat Titans,Kolkata Knight Riders,Gujarat Titans,field,Kolkata Knight Riders,264,223,Kolkata Knight Riders,0,,,0.88
+124,2022,2022-03-26,Rajiv Gandhi Intl,Hyderabad,Mumbai Indians,Kolkata Knight Riders,Mumbai Indians,field,Kolkata Knight Riders,242,213,Kolkata Knight Riders,0,,,1.12
+125,2022,2022-04-11,MA Chidambaram Stadium,Chennai,Delhi Capitals,Sunrisers Hyderabad,Delhi Capitals,bat,Delhi Capitals,232,235,Sunrisers Hyderabad,0,,,0.88
+126,2022,2022-05-05,Arun Jaitley Stadium,Delhi,Royal Challengers Bengaluru,Mumbai Indians,Royal Challengers Bengaluru,field,Mumbai Indians,251,228,Mumbai Indians,0,,,1.08
+127,2022,2022-04-29,Arun Jaitley Stadium,Delhi,Sunrisers Hyderabad,Mumbai Indians,Mumbai Indians,bat,Mumbai Indians,203,206,Sunrisers Hyderabad,0,,,1.08
+128,2022,2022-04-11,Arun Jaitley Stadium,Delhi,Lucknow Super Giants,Delhi Capitals,Lucknow Super Giants,bat,Lucknow Super Giants,230,209,Lucknow Super Giants,0,,,1.08
+129,2022,2022-04-24,Rajiv Gandhi Intl,Hyderabad,Mumbai Indians,Rajasthan Royals,Mumbai Indians,bat,Mumbai Indians,256,253,Mumbai Indians,0,,,1.12
+130,2022,2022-05-07,Wankhede Stadium,Mumbai,Rajasthan Royals,Kolkata Knight Riders,Rajasthan Royals,field,Kolkata Knight Riders,264,263,Kolkata Knight Riders,0,,,1.18
+131,2022,2022-04-02,Arun Jaitley Stadium,Delhi,Mumbai Indians,Rajasthan Royals,Rajasthan Royals,bat,Rajasthan Royals,257,198,Rajasthan Royals,0,,,1.08
+132,2022,2022-05-06,MA Chidambaram Stadium,Chennai,Punjab Kings,Gujarat Titans,Gujarat Titans,bat,Gujarat Titans,193,196,Punjab Kings,0,,,0.88
+133,2022,2022-04-26,M Chinnaswamy Stadium,Bengaluru,Chennai Super Kings,Lucknow Super Giants,Chennai Super Kings,field,Lucknow Super Giants,280,284,Chennai Super Kings,0,,,1.25
+134,2022,2022-05-05,BRSABV Ekana Stadium,Lucknow,Royal Challengers Bengaluru,Sunrisers Hyderabad,Royal Challengers Bengaluru,field,Sunrisers Hyderabad,269,210,Sunrisers Hyderabad,0,,,0.95
+135,2022,2022-04-16,M Chinnaswamy Stadium,Bengaluru,Gujarat Titans,Delhi Capitals,Gujarat Titans,bat,Gujarat Titans,273,251,Gujarat Titans,0,,,1.25
+136,2022,2022-05-08,Eden Gardens,Kolkata,Royal Challengers Bengaluru,Rajasthan Royals,Rajasthan Royals,bat,Rajasthan Royals,268,235,Rajasthan Royals,0,,,1.05
+137,2022,2022-04-30,Narendra Modi Stadium,Ahmedabad,Mumbai Indians,Gujarat Titans,Gujarat Titans,bat,Gujarat Titans,268,267,Gujarat Titans,0,,,1.02
+138,2022,2022-04-12,Rajiv Gandhi Intl,Hyderabad,Delhi Capitals,Punjab Kings,Punjab Kings,field,Delhi Capitals,241,242,Punjab Kings,0,,,1.12
+139,2022,2022-04-23,Wankhede Stadium,Mumbai,Rajasthan Royals,Sunrisers Hyderabad,Sunrisers Hyderabad,field,Rajasthan Royals,271,265,Rajasthan Royals,0,,,1.18
+140,2022,2022-04-03,BRSABV Ekana Stadium,Lucknow,Chennai Super Kings,Delhi Capitals,Chennai Super Kings,bat,Chennai Super Kings,282,230,Chennai Super Kings,0,,,0.95
+141,2022,2022-04-01,MA Chidambaram Stadium,Chennai,Delhi Capitals,Royal Challengers Bengaluru,Royal Challengers Bengaluru,bat,Royal Challengers Bengaluru,269,231,Royal Challengers Bengaluru,0,,,0.88
+142,2022,2022-04-22,Rajiv Gandhi Intl,Hyderabad,Gujarat Titans,Delhi Capitals,Gujarat Titans,bat,Gujarat Titans,273,240,Gujarat Titans,0,,,1.12
+143,2022,2022-03-28,MA Chidambaram Stadium,Chennai,Lucknow Super Giants,Sunrisers Hyderabad,Sunrisers Hyderabad,field,Lucknow Super Giants,263,253,Lucknow Super Giants,0,,,0.88
+144,2022,2022-05-08,Wankhede Stadium,Mumbai,Chennai Super Kings,Mumbai Indians,Mumbai Indians,field,Chennai Super Kings,288,238,Chennai Super Kings,0,,,1.18
+145,2022,2022-04-10,Sawai Mansingh Stadium,Jaipur,Rajasthan Royals,Chennai Super Kings,Chennai Super Kings,bat,Chennai Super Kings,222,224,Rajasthan Royals,0,,,1.1
+146,2022,2022-04-09,Eden Gardens,Kolkata,Mumbai Indians,Sunrisers Hyderabad,Mumbai Indians,bat,Mumbai Indians,226,228,Sunrisers Hyderabad,0,,,1.05
+147,2022,2022-04-09,Narendra Modi Stadium,Ahmedabad,Kolkata Knight Riders,Lucknow Super Giants,Kolkata Knight Riders,bat,Kolkata Knight Riders,220,223,Lucknow Super Giants,0,,,1.02
+148,2022,2022-04-21,M Chinnaswamy Stadium,Bengaluru,Mumbai Indians,Sunrisers Hyderabad,Mumbai Indians,bat,Mumbai Indians,293,263,Mumbai Indians,0,,,1.25
+149,2022,2022-04-30,Sawai Mansingh Stadium,Jaipur,Delhi Capitals,Rajasthan Royals,Rajasthan Royals,bat,Rajasthan Royals,222,227,Delhi Capitals,0,,,1.1
+150,2022,2022-04-28,BRSABV Ekana Stadium,Lucknow,Mumbai Indians,Delhi Capitals,Delhi Capitals,bat,Delhi Capitals,259,240,Delhi Capitals,0,,,0.95
+151,2023,2023-04-21,BRSABV Ekana Stadium,Lucknow,Rajasthan Royals,Punjab Kings,Punjab Kings,bat,Punjab Kings,223,228,Rajasthan Royals,1,15.0,Abhishek Sharma,0.95
+152,2023,2023-04-15,M Chinnaswamy Stadium,Bengaluru,Royal Challengers Bengaluru,Delhi Capitals,Delhi Capitals,bat,Delhi Capitals,216,222,Royal Challengers Bengaluru,1,8.0,Ravindra Jadeja,1.25
+153,2023,2023-04-03,MA Chidambaram Stadium,Chennai,Royal Challengers Bengaluru,Chennai Super Kings,Chennai Super Kings,field,Royal Challengers Bengaluru,252,255,Chennai Super Kings,1,8.0,Rishabh Pant,0.88
+154,2023,2023-03-28,Arun Jaitley Stadium,Delhi,Sunrisers Hyderabad,Punjab Kings,Punjab Kings,bat,Punjab Kings,208,210,Sunrisers Hyderabad,1,12.0,Mayank Yadav,1.08
+155,2023,2023-04-03,Arun Jaitley Stadium,Delhi,Rajasthan Royals,Sunrisers Hyderabad,Sunrisers Hyderabad,field,Rajasthan Royals,216,219,Sunrisers Hyderabad,1,15.0,Axar Patel,1.08
+156,2023,2023-04-27,Wankhede Stadium,Mumbai,Lucknow Super Giants,Sunrisers Hyderabad,Sunrisers Hyderabad,field,Lucknow Super Giants,260,221,Lucknow Super Giants,1,9.0,Shubman Gill,1.18
+157,2023,2023-05-04,Eden Gardens,Kolkata,Lucknow Super Giants,Kolkata Knight Riders,Kolkata Knight Riders,field,Lucknow Super Giants,279,272,Lucknow Super Giants,1,9.0,Ruturaj Gaikwad,1.05
+158,2023,2023-03-25,Arun Jaitley Stadium,Delhi,Sunrisers Hyderabad,Lucknow Super Giants,Lucknow Super Giants,bat,Lucknow Super Giants,233,237,Sunrisers Hyderabad,1,12.0,Pat Cummins,1.08
+159,2023,2023-04-24,Arun Jaitley Stadium,Delhi,Kolkata Knight Riders,Lucknow Super Giants,Kolkata Knight Riders,bat,Kolkata Knight Riders,238,239,Lucknow Super Giants,1,9.0,Mayank Yadav,1.08
+160,2023,2023-04-04,Sawai Mansingh Stadium,Jaipur,Delhi Capitals,Gujarat Titans,Gujarat Titans,bat,Gujarat Titans,233,215,Gujarat Titans,1,13.0,Rajat Patidar,1.1
+161,2023,2023-04-16,Arun Jaitley Stadium,Delhi,Gujarat Titans,Lucknow Super Giants,Lucknow Super Giants,bat,Lucknow Super Giants,249,251,Gujarat Titans,1,14.0,Faf du Plessis,1.08
+162,2023,2023-04-22,Narendra Modi Stadium,Ahmedabad,Delhi Capitals,Sunrisers Hyderabad,Sunrisers Hyderabad,bat,Sunrisers Hyderabad,279,239,Sunrisers Hyderabad,1,13.0,Rashid Khan,1.02
+163,2023,2023-04-01,Narendra Modi Stadium,Ahmedabad,Rajasthan Royals,Royal Challengers Bengaluru,Rajasthan Royals,field,Royal Challengers Bengaluru,287,228,Royal Challengers Bengaluru,1,14.0,Pat Cummins,1.02
+164,2023,2023-05-05,M Chinnaswamy Stadium,Bengaluru,Delhi Capitals,Kolkata Knight Riders,Delhi Capitals,field,Kolkata Knight Riders,241,243,Delhi Capitals,1,13.0,Harshal Patel,1.25
+165,2023,2023-03-25,Wankhede Stadium,Mumbai,Royal Challengers Bengaluru,Sunrisers Hyderabad,Royal Challengers Bengaluru,bat,Royal Challengers Bengaluru,266,245,Royal Challengers Bengaluru,1,7.0,Yashasvi Jaiswal,1.18
+166,2023,2023-04-25,Narendra Modi Stadium,Ahmedabad,Delhi Capitals,Lucknow Super Giants,Delhi Capitals,field,Lucknow Super Giants,255,258,Delhi Capitals,1,7.0,KL Rahul,1.02
+167,2023,2023-03-29,BRSABV Ekana Stadium,Lucknow,Rajasthan Royals,Sunrisers Hyderabad,Sunrisers Hyderabad,bat,Sunrisers Hyderabad,245,251,Rajasthan Royals,1,12.0,Pat Cummins,0.95
+168,2023,2023-04-01,Rajiv Gandhi Intl,Hyderabad,Gujarat Titans,Chennai Super Kings,Gujarat Titans,field,Chennai Super Kings,268,266,Chennai Super Kings,1,7.0,Yash Dayal,1.12
+169,2023,2023-03-29,Eden Gardens,Kolkata,Mumbai Indians,Gujarat Titans,Gujarat Titans,bat,Gujarat Titans,262,267,Mumbai Indians,1,15.0,Ravindra Jadeja,1.05
+170,2023,2023-04-19,M Chinnaswamy Stadium,Bengaluru,Punjab Kings,Rajasthan Royals,Punjab Kings,bat,Punjab Kings,244,243,Punjab Kings,1,10.0,Tilak Varma,1.25
+171,2023,2023-04-01,Arun Jaitley Stadium,Delhi,Mumbai Indians,Delhi Capitals,Delhi Capitals,field,Mumbai Indians,223,226,Delhi Capitals,1,15.0,Rashid Khan,1.08
+172,2023,2023-04-24,Rajiv Gandhi Intl,Hyderabad,Punjab Kings,Rajasthan Royals,Punjab Kings,field,Rajasthan Royals,280,237,Rajasthan Royals,1,10.0,Travis Head,1.12
+173,2023,2023-04-13,Rajiv Gandhi Intl,Hyderabad,Gujarat Titans,Sunrisers Hyderabad,Gujarat Titans,bat,Gujarat Titans,276,218,Gujarat Titans,1,15.0,Arshdeep Singh,1.12
+174,2023,2023-04-05,Eden Gardens,Kolkata,Kolkata Knight Riders,Sunrisers Hyderabad,Sunrisers Hyderabad,bat,Sunrisers Hyderabad,260,259,Sunrisers Hyderabad,1,14.0,Yuzvendra Chahal,1.05
+175,2023,2023-04-10,Eden Gardens,Kolkata,Kolkata Knight Riders,Royal Challengers Bengaluru,Royal Challengers Bengaluru,field,Kolkata Knight Riders,248,251,Royal Challengers Bengaluru,1,7.0,Yash Dayal,1.05
+176,2023,2023-04-25,Eden Gardens,Kolkata,Mumbai Indians,Rajasthan Royals,Mumbai Indians,field,Rajasthan Royals,227,213,Rajasthan Royals,1,8.0,Travis Head,1.05
+177,2023,2023-04-12,Narendra Modi Stadium,Ahmedabad,Punjab Kings,Kolkata Knight Riders,Punjab Kings,bat,Punjab Kings,231,233,Kolkata Knight Riders,1,10.0,Avesh Khan,1.02
+178,2023,2023-05-05,Wankhede Stadium,Mumbai,Royal Challengers Bengaluru,Delhi Capitals,Delhi Capitals,bat,Delhi Capitals,278,274,Delhi Capitals,1,7.0,Heinrich Klaasen,1.18
+179,2023,2023-03-30,Sawai Mansingh Stadium,Jaipur,Gujarat Titans,Punjab Kings,Gujarat Titans,field,Punjab Kings,215,216,Gujarat Titans,1,14.0,Heinrich Klaasen,1.1
+180,2023,2023-04-01,Sawai Mansingh Stadium,Jaipur,Delhi Capitals,Kolkata Knight Riders,Delhi Capitals,bat,Delhi Capitals,254,260,Kolkata Knight Riders,1,9.0,Quinton de Kock,1.1
+181,2023,2023-04-15,MA Chidambaram Stadium,Chennai,Lucknow Super Giants,Punjab Kings,Lucknow Super Giants,bat,Lucknow Super Giants,260,261,Punjab Kings,1,8.0,Suryakumar Yadav,0.88
+182,2023,2023-03-31,Narendra Modi Stadium,Ahmedabad,Punjab Kings,Lucknow Super Giants,Punjab Kings,bat,Punjab Kings,277,183,Punjab Kings,1,7.0,Varun Chakaravarthy,1.02
+183,2023,2023-04-26,M Chinnaswamy Stadium,Bengaluru,Delhi Capitals,Gujarat Titans,Gujarat Titans,bat,Gujarat Titans,269,225,Gujarat Titans,1,13.0,Ruturaj Gaikwad,1.25
+184,2023,2023-04-22,Narendra Modi Stadium,Ahmedabad,Rajasthan Royals,Mumbai Indians,Rajasthan Royals,bat,Rajasthan Royals,236,240,Mumbai Indians,1,13.0,Jasprit Bumrah,1.02
+185,2023,2023-04-03,Rajiv Gandhi Intl,Hyderabad,Rajasthan Royals,Mumbai Indians,Mumbai Indians,field,Rajasthan Royals,213,216,Mumbai Indians,1,8.0,Rajat Patidar,1.12
+186,2023,2023-04-19,Wankhede Stadium,Mumbai,Chennai Super Kings,Kolkata Knight Riders,Chennai Super Kings,bat,Chennai Super Kings,272,261,Chennai Super Kings,1,10.0,Nitish Kumar Reddy,1.18
+187,2023,2023-05-03,BRSABV Ekana Stadium,Lucknow,Gujarat Titans,Sunrisers Hyderabad,Gujarat Titans,field,Sunrisers Hyderabad,240,242,Gujarat Titans,1,15.0,T Natarajan,0.95
+188,2023,2023-04-10,Rajiv Gandhi Intl,Hyderabad,Rajasthan Royals,Punjab Kings,Rajasthan Royals,field,Punjab Kings,269,235,Punjab Kings,1,11.0,Yuzvendra Chahal,1.12
+189,2023,2023-04-01,M Chinnaswamy Stadium,Bengaluru,Punjab Kings,Rajasthan Royals,Rajasthan Royals,bat,Rajasthan Royals,275,277,Punjab Kings,1,12.0,Yashasvi Jaiswal,1.25
+190,2023,2023-03-27,Wankhede Stadium,Mumbai,Sunrisers Hyderabad,Punjab Kings,Punjab Kings,bat,Punjab Kings,299,269,Punjab Kings,1,13.0,Yash Dayal,1.18
+191,2023,2023-05-09,Eden Gardens,Kolkata,Punjab Kings,Gujarat Titans,Punjab Kings,field,Gujarat Titans,243,244,Punjab Kings,1,8.0,T Natarajan,1.05
+192,2023,2023-04-25,M Chinnaswamy Stadium,Bengaluru,Punjab Kings,Mumbai Indians,Mumbai Indians,bat,Mumbai Indians,236,237,Punjab Kings,1,8.0,Harshal Patel,1.25
+193,2023,2023-04-30,BRSABV Ekana Stadium,Lucknow,Sunrisers Hyderabad,Chennai Super Kings,Chennai Super Kings,field,Sunrisers Hyderabad,242,195,Sunrisers Hyderabad,1,8.0,Rashid Khan,0.95
+194,2023,2023-04-14,Narendra Modi Stadium,Ahmedabad,Rajasthan Royals,Punjab Kings,Rajasthan Royals,bat,Rajasthan Royals,266,267,Punjab Kings,1,13.0,Rajat Patidar,1.02
+195,2023,2023-04-10,Sawai Mansingh Stadium,Jaipur,Kolkata Knight Riders,Royal Challengers Bengaluru,Kolkata Knight Riders,field,Royal Challengers Bengaluru,220,221,Kolkata Knight Riders,1,9.0,MS Dhoni,1.1
+196,2023,2023-03-30,Sawai Mansingh Stadium,Jaipur,Lucknow Super Giants,Mumbai Indians,Mumbai Indians,field,Lucknow Super Giants,214,215,Mumbai Indians,1,7.0,Rajat Patidar,1.1
+197,2023,2023-04-20,Wankhede Stadium,Mumbai,Mumbai Indians,Chennai Super Kings,Mumbai Indians,bat,Mumbai Indians,269,267,Mumbai Indians,1,12.0,Ravindra Jadeja,1.18
+198,2023,2023-04-17,Sawai Mansingh Stadium,Jaipur,Kolkata Knight Riders,Rajasthan Royals,Kolkata Knight Riders,bat,Kolkata Knight Riders,220,221,Rajasthan Royals,1,14.0,Arshdeep Singh,1.1
+199,2023,2023-04-03,Rajiv Gandhi Intl,Hyderabad,Lucknow Super Giants,Punjab Kings,Punjab Kings,field,Lucknow Super Giants,261,211,Lucknow Super Giants,1,15.0,Abhishek Sharma,1.12
+200,2023,2023-04-20,Narendra Modi Stadium,Ahmedabad,Lucknow Super Giants,Chennai Super Kings,Lucknow Super Giants,field,Chennai Super Kings,254,245,Chennai Super Kings,1,10.0,Axar Patel,1.02
+201,2024,2024-04-21,Wankhede Stadium,Mumbai,Mumbai Indians,Delhi Capitals,Delhi Capitals,field,Mumbai Indians,268,269,Delhi Capitals,1,10.0,Ravindra Jadeja,1.18
+202,2024,2024-03-29,Eden Gardens,Kolkata,Delhi Capitals,Chennai Super Kings,Chennai Super Kings,bat,Chennai Super Kings,221,222,Delhi Capitals,1,9.0,Mohammed Shami,1.05
+203,2024,2024-04-28,M Chinnaswamy Stadium,Bengaluru,Rajasthan Royals,Kolkata Knight Riders,Rajasthan Royals,field,Kolkata Knight Riders,297,294,Kolkata Knight Riders,1,9.0,Travis Head,1.25
+204,2024,2024-05-01,M Chinnaswamy Stadium,Bengaluru,Punjab Kings,Mumbai Indians,Punjab Kings,field,Mumbai Indians,261,264,Punjab Kings,1,11.0,Pat Cummins,1.25
+205,2024,2024-04-01,Wankhede Stadium,Mumbai,Lucknow Super Giants,Punjab Kings,Punjab Kings,bat,Punjab Kings,269,270,Lucknow Super Giants,1,10.0,Abhishek Sharma,1.18
+206,2024,2024-03-30,MA Chidambaram Stadium,Chennai,Kolkata Knight Riders,Royal Challengers Bengaluru,Kolkata Knight Riders,bat,Kolkata Knight Riders,241,233,Kolkata Knight Riders,1,12.0,Rajat Patidar,0.88
+207,2024,2024-04-05,Eden Gardens,Kolkata,Sunrisers Hyderabad,Punjab Kings,Sunrisers Hyderabad,bat,Sunrisers Hyderabad,233,234,Punjab Kings,1,7.0,Nitish Kumar Reddy,1.05
+208,2024,2024-05-07,Rajiv Gandhi Intl,Hyderabad,Sunrisers Hyderabad,Kolkata Knight Riders,Sunrisers Hyderabad,field,Kolkata Knight Riders,212,213,Sunrisers Hyderabad,1,13.0,Mayank Yadav,1.12
+209,2024,2024-04-15,BRSABV Ekana Stadium,Lucknow,Gujarat Titans,Sunrisers Hyderabad,Gujarat Titans,field,Sunrisers Hyderabad,262,247,Sunrisers Hyderabad,1,13.0,Abhishek Sharma,0.95
+210,2024,2024-04-27,Sawai Mansingh Stadium,Jaipur,Punjab Kings,Lucknow Super Giants,Lucknow Super Giants,bat,Lucknow Super Giants,274,233,Lucknow Super Giants,1,10.0,Mohammed Shami,1.1
+211,2024,2024-04-07,BRSABV Ekana Stadium,Lucknow,Punjab Kings,Rajasthan Royals,Rajasthan Royals,bat,Rajasthan Royals,260,223,Rajasthan Royals,1,15.0,Nitish Kumar Reddy,0.95
+212,2024,2024-04-08,Narendra Modi Stadium,Ahmedabad,Royal Challengers Bengaluru,Kolkata Knight Riders,Royal Challengers Bengaluru,field,Kolkata Knight Riders,249,250,Royal Challengers Bengaluru,1,13.0,Faf du Plessis,1.02
+213,2024,2024-04-02,Narendra Modi Stadium,Ahmedabad,Chennai Super Kings,Mumbai Indians,Chennai Super Kings,bat,Chennai Super Kings,274,255,Chennai Super Kings,1,14.0,Rohit Sharma,1.02
+214,2024,2024-04-04,Arun Jaitley Stadium,Delhi,Punjab Kings,Sunrisers Hyderabad,Sunrisers Hyderabad,bat,Sunrisers Hyderabad,251,256,Punjab Kings,1,8.0,Faf du Plessis,1.08
+215,2024,2024-04-24,MA Chidambaram Stadium,Chennai,Punjab Kings,Kolkata Knight Riders,Kolkata Knight Riders,field,Punjab Kings,302,217,Punjab Kings,1,11.0,Rinku Singh,0.88
+216,2024,2024-04-19,M Chinnaswamy Stadium,Bengaluru,Rajasthan Royals,Lucknow Super Giants,Rajasthan Royals,bat,Rajasthan Royals,304,234,Rajasthan Royals,1,11.0,Rashid Khan,1.25
+217,2024,2024-03-26,MA Chidambaram Stadium,Chennai,Punjab Kings,Gujarat Titans,Punjab Kings,field,Gujarat Titans,212,217,Punjab Kings,1,15.0,Rajat Patidar,0.88
+218,2024,2024-04-29,MA Chidambaram Stadium,Chennai,Sunrisers Hyderabad,Gujarat Titans,Gujarat Titans,bat,Gujarat Titans,234,235,Sunrisers Hyderabad,1,10.0,Faf du Plessis,0.88
+219,2024,2024-04-16,MA Chidambaram Stadium,Chennai,Delhi Capitals,Rajasthan Royals,Delhi Capitals,bat,Delhi Capitals,248,218,Delhi Capitals,1,,,0.88
+220,2024,2024-05-08,Sawai Mansingh Stadium,Jaipur,Rajasthan Royals,Lucknow Super Giants,Rajasthan Royals,field,Lucknow Super Giants,254,256,Rajasthan Royals,1,12.0,Harshal Patel,1.1
+221,2024,2024-04-23,Narendra Modi Stadium,Ahmedabad,Kolkata Knight Riders,Mumbai Indians,Mumbai Indians,field,Kolkata Knight Riders,218,222,Mumbai Indians,1,11.0,Hardik Pandya,1.02
+222,2024,2024-04-22,Wankhede Stadium,Mumbai,Kolkata Knight Riders,Delhi Capitals,Delhi Capitals,field,Kolkata Knight Riders,249,252,Delhi Capitals,1,7.0,Mayank Yadav,1.18
+223,2024,2024-05-04,Arun Jaitley Stadium,Delhi,Punjab Kings,Royal Challengers Bengaluru,Royal Challengers Bengaluru,field,Punjab Kings,247,229,Punjab Kings,1,14.0,Jasprit Bumrah,1.08
+224,2024,2024-04-09,M Chinnaswamy Stadium,Bengaluru,Sunrisers Hyderabad,Gujarat Titans,Sunrisers Hyderabad,field,Gujarat Titans,268,247,Gujarat Titans,1,11.0,Nitish Kumar Reddy,1.25
+225,2024,2024-04-22,MA Chidambaram Stadium,Chennai,Kolkata Knight Riders,Punjab Kings,Kolkata Knight Riders,bat,Kolkata Knight Riders,271,221,Kolkata Knight Riders,1,8.0,Abhishek Sharma,0.88
+226,2024,2024-04-13,Eden Gardens,Kolkata,Gujarat Titans,Chennai Super Kings,Gujarat Titans,field,Chennai Super Kings,251,210,Chennai Super Kings,1,8.0,Faf du Plessis,1.05
+227,2024,2024-04-19,M Chinnaswamy Stadium,Bengaluru,Gujarat Titans,Chennai Super Kings,Gujarat Titans,field,Chennai Super Kings,320,266,Chennai Super Kings,1,14.0,Avesh Khan,1.25
+228,2024,2024-04-04,Wankhede Stadium,Mumbai,Royal Challengers Bengaluru,Kolkata Knight Riders,Kolkata Knight Riders,bat,Kolkata Knight Riders,298,277,Kolkata Knight Riders,1,13.0,Rashid Khan,1.18
+229,2024,2024-04-03,M Chinnaswamy Stadium,Bengaluru,Punjab Kings,Lucknow Super Giants,Punjab Kings,field,Lucknow Super Giants,280,264,Lucknow Super Giants,1,7.0,Tilak Varma,1.25
+230,2024,2024-05-01,BRSABV Ekana Stadium,Lucknow,Sunrisers Hyderabad,Rajasthan Royals,Sunrisers Hyderabad,bat,Sunrisers Hyderabad,243,245,Rajasthan Royals,1,9.0,Nitish Kumar Reddy,0.95
+231,2024,2024-04-05,Eden Gardens,Kolkata,Rajasthan Royals,Sunrisers Hyderabad,Rajasthan Royals,bat,Rajasthan Royals,302,293,Rajasthan Royals,1,12.0,Nitish Kumar Reddy,1.05
+232,2024,2024-04-18,Narendra Modi Stadium,Ahmedabad,Lucknow Super Giants,Rajasthan Royals,Lucknow Super Giants,bat,Lucknow Super Giants,254,231,Lucknow Super Giants,1,7.0,Varun Chakaravarthy,1.02
+233,2024,2024-04-28,MA Chidambaram Stadium,Chennai,Mumbai Indians,Rajasthan Royals,Rajasthan Royals,field,Mumbai Indians,232,236,Rajasthan Royals,1,10.0,Faf du Plessis,0.88
+234,2024,2024-03-28,Sawai Mansingh Stadium,Jaipur,Chennai Super Kings,Gujarat Titans,Gujarat Titans,field,Chennai Super Kings,269,212,Chennai Super Kings,1,13.0,Rajat Patidar,1.1
+235,2024,2024-04-05,Wankhede Stadium,Mumbai,Mumbai Indians,Punjab Kings,Mumbai Indians,bat,Mumbai Indians,297,293,Mumbai Indians,1,13.0,Rohit Sharma,1.18
+236,2024,2024-04-09,Arun Jaitley Stadium,Delhi,Sunrisers Hyderabad,Mumbai Indians,Sunrisers Hyderabad,bat,Sunrisers Hyderabad,237,237,Tie,1,7.0,Glenn Maxwell,1.08
+237,2024,2024-05-03,Narendra Modi Stadium,Ahmedabad,Royal Challengers Bengaluru,Lucknow Super Giants,Lucknow Super Giants,field,Royal Challengers Bengaluru,252,211,Royal Challengers Bengaluru,1,15.0,Travis Head,1.02
+238,2024,2024-04-17,Wankhede Stadium,Mumbai,Lucknow Super Giants,Gujarat Titans,Lucknow Super Giants,field,Gujarat Titans,251,253,Lucknow Super Giants,1,15.0,Mayank Yadav,1.18
+239,2024,2024-04-05,Sawai Mansingh Stadium,Jaipur,Kolkata Knight Riders,Punjab Kings,Kolkata Knight Riders,field,Punjab Kings,241,225,Punjab Kings,1,10.0,Shubman Gill,1.1
+240,2024,2024-04-10,M Chinnaswamy Stadium,Bengaluru,Lucknow Super Giants,Mumbai Indians,Mumbai Indians,field,Lucknow Super Giants,297,253,Lucknow Super Giants,1,13.0,Harshal Patel,1.25
+241,2024,2024-05-05,MA Chidambaram Stadium,Chennai,Kolkata Knight Riders,Gujarat Titans,Gujarat Titans,field,Kolkata Knight Riders,237,242,Gujarat Titans,1,13.0,Abhishek Sharma,0.88
+242,2024,2024-05-07,Eden Gardens,Kolkata,Chennai Super Kings,Royal Challengers Bengaluru,Royal Challengers Bengaluru,field,Chennai Super Kings,233,234,Royal Challengers Bengaluru,1,10.0,Pat Cummins,1.05
+243,2024,2024-04-02,MA Chidambaram Stadium,Chennai,Gujarat Titans,Lucknow Super Giants,Gujarat Titans,field,Lucknow Super Giants,291,244,Lucknow Super Giants,1,7.0,Heinrich Klaasen,0.88
+244,2024,2024-04-20,MA Chidambaram Stadium,Chennai,Punjab Kings,Rajasthan Royals,Punjab Kings,field,Rajasthan Royals,227,233,Punjab Kings,1,13.0,Axar Patel,0.88
+245,2024,2024-04-19,Wankhede Stadium,Mumbai,Mumbai Indians,Sunrisers Hyderabad,Mumbai Indians,field,Sunrisers Hyderabad,253,254,Mumbai Indians,1,11.0,Yash Dayal,1.18
+246,2024,2024-04-17,MA Chidambaram Stadium,Chennai,Chennai Super Kings,Mumbai Indians,Chennai Super Kings,field,Mumbai Indians,235,237,Chennai Super Kings,1,12.0,Nitish Kumar Reddy,0.88
+247,2024,2024-04-16,Eden Gardens,Kolkata,Chennai Super Kings,Gujarat Titans,Gujarat Titans,field,Chennai Super Kings,282,238,Chennai Super Kings,1,11.0,Virat Kohli,1.05
+248,2024,2024-04-16,Arun Jaitley Stadium,Delhi,Rajasthan Royals,Lucknow Super Giants,Lucknow Super Giants,field,Rajasthan Royals,254,256,Lucknow Super Giants,1,14.0,Mohammed Shami,1.08
+249,2024,2024-05-09,Rajiv Gandhi Intl,Hyderabad,Punjab Kings,Sunrisers Hyderabad,Punjab Kings,bat,Punjab Kings,249,255,Sunrisers Hyderabad,1,13.0,Yash Dayal,1.12
+250,2024,2024-03-28,Eden Gardens,Kolkata,Rajasthan Royals,Gujarat Titans,Gujarat Titans,bat,Gujarat Titans,225,215,Gujarat Titans,1,13.0,Pat Cummins,1.05
+251,2025,2025-04-01,BRSABV Ekana Stadium,Lucknow,Chennai Super Kings,Delhi Capitals,Chennai Super Kings,field,Delhi Capitals,226,230,Chennai Super Kings,1,15.0,Varun Chakaravarthy,0.95
+252,2025,2025-04-17,MA Chidambaram Stadium,Chennai,Gujarat Titans,Sunrisers Hyderabad,Gujarat Titans,bat,Gujarat Titans,268,249,Gujarat Titans,1,11.0,Avesh Khan,0.88
+253,2025,2025-03-28,Rajiv Gandhi Intl,Hyderabad,Delhi Capitals,Lucknow Super Giants,Delhi Capitals,bat,Delhi Capitals,286,288,Lucknow Super Giants,1,7.0,Yash Dayal,1.12
+254,2025,2025-04-28,Narendra Modi Stadium,Ahmedabad,Gujarat Titans,Kolkata Knight Riders,Gujarat Titans,field,Kolkata Knight Riders,247,222,Kolkata Knight Riders,1,8.0,Yuzvendra Chahal,1.02
+255,2025,2025-04-06,Narendra Modi Stadium,Ahmedabad,Delhi Capitals,Punjab Kings,Punjab Kings,field,Delhi Capitals,282,267,Delhi Capitals,1,10.0,Avesh Khan,1.02
+256,2025,2025-04-26,M Chinnaswamy Stadium,Bengaluru,Mumbai Indians,Kolkata Knight Riders,Mumbai Indians,field,Kolkata Knight Riders,246,249,Mumbai Indians,1,7.0,Travis Head,1.25
+257,2025,2025-03-29,Eden Gardens,Kolkata,Gujarat Titans,Rajasthan Royals,Gujarat Titans,bat,Gujarat Titans,221,226,Rajasthan Royals,1,12.0,Rajat Patidar,1.05
+258,2025,2025-05-02,BRSABV Ekana Stadium,Lucknow,Mumbai Indians,Rajasthan Royals,Rajasthan Royals,field,Mumbai Indians,277,207,Mumbai Indians,1,7.0,Yuzvendra Chahal,0.95
+259,2025,2025-03-26,Wankhede Stadium,Mumbai,Lucknow Super Giants,Mumbai Indians,Mumbai Indians,field,Lucknow Super Giants,276,278,Mumbai Indians,1,12.0,Axar Patel,1.18
+260,2025,2025-05-03,BRSABV Ekana Stadium,Lucknow,Rajasthan Royals,Kolkata Knight Riders,Rajasthan Royals,field,Kolkata Knight Riders,221,222,Rajasthan Royals,1,11.0,Arshdeep Singh,0.95
+261,2025,2025-04-01,Wankhede Stadium,Mumbai,Sunrisers Hyderabad,Punjab Kings,Sunrisers Hyderabad,field,Punjab Kings,231,233,Sunrisers Hyderabad,1,14.0,Yuzvendra Chahal,1.18
+262,2025,2025-04-13,Arun Jaitley Stadium,Delhi,Mumbai Indians,Gujarat Titans,Gujarat Titans,field,Mumbai Indians,276,216,Mumbai Indians,1,10.0,Rinku Singh,1.08
+263,2025,2025-04-13,Sawai Mansingh Stadium,Jaipur,Mumbai Indians,Royal Challengers Bengaluru,Royal Challengers Bengaluru,bat,Royal Challengers Bengaluru,248,249,Mumbai Indians,1,8.0,Rinku Singh,1.1
+264,2025,2025-04-08,Narendra Modi Stadium,Ahmedabad,Punjab Kings,Kolkata Knight Riders,Punjab Kings,bat,Punjab Kings,287,243,Punjab Kings,1,8.0,Hardik Pandya,1.02
+265,2025,2025-03-25,Rajiv Gandhi Intl,Hyderabad,Chennai Super Kings,Lucknow Super Giants,Chennai Super Kings,field,Lucknow Super Giants,255,257,Chennai Super Kings,1,12.0,Travis Head,1.12
+266,2025,2025-04-01,M Chinnaswamy Stadium,Bengaluru,Punjab Kings,Gujarat Titans,Gujarat Titans,bat,Gujarat Titans,300,266,Gujarat Titans,1,11.0,Hardik Pandya,1.25
+267,2025,2025-04-12,MA Chidambaram Stadium,Chennai,Chennai Super Kings,Sunrisers Hyderabad,Sunrisers Hyderabad,bat,Sunrisers Hyderabad,234,237,Chennai Super Kings,1,14.0,Ravindra Jadeja,0.88
+268,2025,2025-04-25,Sawai Mansingh Stadium,Jaipur,Chennai Super Kings,Mumbai Indians,Mumbai Indians,field,Chennai Super Kings,249,208,Chennai Super Kings,1,11.0,Nitish Kumar Reddy,1.1
+269,2025,2025-04-09,M Chinnaswamy Stadium,Bengaluru,Delhi Capitals,Royal Challengers Bengaluru,Royal Challengers Bengaluru,bat,Royal Challengers Bengaluru,279,239,Royal Challengers Bengaluru,1,8.0,T Natarajan,1.25
+270,2025,2025-04-12,Narendra Modi Stadium,Ahmedabad,Gujarat Titans,Lucknow Super Giants,Lucknow Super Giants,field,Gujarat Titans,243,214,Gujarat Titans,1,11.0,Yuzvendra Chahal,1.02
+271,2025,2025-04-11,Eden Gardens,Kolkata,Royal Challengers Bengaluru,Punjab Kings,Punjab Kings,bat,Punjab Kings,242,213,Punjab Kings,1,9.0,Nitish Kumar Reddy,1.05
+272,2025,2025-05-02,Eden Gardens,Kolkata,Gujarat Titans,Royal Challengers Bengaluru,Royal Challengers Bengaluru,bat,Royal Challengers Bengaluru,245,229,Royal Challengers Bengaluru,1,7.0,Axar Patel,1.05
+273,2025,2025-04-09,M Chinnaswamy Stadium,Bengaluru,Sunrisers Hyderabad,Gujarat Titans,Sunrisers Hyderabad,field,Gujarat Titans,309,211,Gujarat Titans,1,11.0,Jasprit Bumrah,1.25
+274,2025,2025-04-23,Rajiv Gandhi Intl,Hyderabad,Chennai Super Kings,Rajasthan Royals,Rajasthan Royals,bat,Rajasthan Royals,233,234,Chennai Super Kings,1,13.0,Avesh Khan,1.12
+275,2025,2025-04-08,Rajiv Gandhi Intl,Hyderabad,Kolkata Knight Riders,Gujarat Titans,Kolkata Knight Riders,bat,Kolkata Knight Riders,263,222,Kolkata Knight Riders,1,8.0,Rashid Khan,1.12
+276,2025,2025-04-01,M Chinnaswamy Stadium,Bengaluru,Lucknow Super Giants,Kolkata Knight Riders,Lucknow Super Giants,field,Kolkata Knight Riders,234,237,Lucknow Super Giants,1,13.0,Shubman Gill,1.25
+277,2025,2025-04-20,Narendra Modi Stadium,Ahmedabad,Royal Challengers Bengaluru,Kolkata Knight Riders,Royal Challengers Bengaluru,field,Kolkata Knight Riders,313,252,Kolkata Knight Riders,1,14.0,Nitish Kumar Reddy,1.02
+278,2025,2025-04-12,Arun Jaitley Stadium,Delhi,Sunrisers Hyderabad,Mumbai Indians,Sunrisers Hyderabad,bat,Sunrisers Hyderabad,228,233,Mumbai Indians,1,7.0,Ruturaj Gaikwad,1.08
+279,2025,2025-05-05,MA Chidambaram Stadium,Chennai,Punjab Kings,Rajasthan Royals,Punjab Kings,field,Rajasthan Royals,271,240,Rajasthan Royals,1,11.0,Harshal Patel,0.88
+280,2025,2025-03-25,Narendra Modi Stadium,Ahmedabad,Delhi Capitals,Punjab Kings,Punjab Kings,bat,Punjab Kings,269,274,Delhi Capitals,1,14.0,Harshal Patel,1.02
+281,2025,2025-04-20,Narendra Modi Stadium,Ahmedabad,Kolkata Knight Riders,Sunrisers Hyderabad,Sunrisers Hyderabad,field,Kolkata Knight Riders,274,280,Sunrisers Hyderabad,1,13.0,Yashasvi Jaiswal,1.02
+282,2025,2025-05-03,Narendra Modi Stadium,Ahmedabad,Mumbai Indians,Sunrisers Hyderabad,Sunrisers Hyderabad,bat,Sunrisers Hyderabad,253,240,Sunrisers Hyderabad,1,10.0,Suryakumar Yadav,1.02
+283,2025,2025-05-08,Eden Gardens,Kolkata,Royal Challengers Bengaluru,Gujarat Titans,Royal Challengers Bengaluru,bat,Royal Challengers Bengaluru,262,232,Royal Challengers Bengaluru,1,12.0,Mohammed Shami,1.05
+284,2025,2025-03-26,BRSABV Ekana Stadium,Lucknow,Delhi Capitals,Rajasthan Royals,Rajasthan Royals,bat,Rajasthan Royals,259,246,Rajasthan Royals,1,,,0.95
+285,2025,2025-03-25,BRSABV Ekana Stadium,Lucknow,Chennai Super Kings,Sunrisers Hyderabad,Sunrisers Hyderabad,field,Chennai Super Kings,240,241,Sunrisers Hyderabad,1,7.0,Faf du Plessis,0.95
+286,2025,2025-04-27,Wankhede Stadium,Mumbai,Delhi Capitals,Sunrisers Hyderabad,Delhi Capitals,bat,Delhi Capitals,234,237,Sunrisers Hyderabad,1,11.0,Jasprit Bumrah,1.18
+287,2025,2025-04-22,Arun Jaitley Stadium,Delhi,Lucknow Super Giants,Chennai Super Kings,Chennai Super Kings,bat,Chennai Super Kings,245,214,Chennai Super Kings,1,12.0,Faf du Plessis,1.08
+288,2025,2025-03-29,Eden Gardens,Kolkata,Chennai Super Kings,Sunrisers Hyderabad,Chennai Super Kings,bat,Chennai Super Kings,283,246,Chennai Super Kings,1,12.0,Yashasvi Jaiswal,1.05
+289,2025,2025-03-26,BRSABV Ekana Stadium,Lucknow,Sunrisers Hyderabad,Punjab Kings,Punjab Kings,bat,Punjab Kings,224,230,Sunrisers Hyderabad,1,11.0,Ruturaj Gaikwad,0.95
+290,2025,2025-04-02,Rajiv Gandhi Intl,Hyderabad,Sunrisers Hyderabad,Rajasthan Royals,Sunrisers Hyderabad,bat,Sunrisers Hyderabad,276,241,Sunrisers Hyderabad,1,15.0,Ruturaj Gaikwad,1.12
+291,2025,2025-04-26,MA Chidambaram Stadium,Chennai,Chennai Super Kings,Kolkata Knight Riders,Kolkata Knight Riders,field,Chennai Super Kings,265,244,Chennai Super Kings,1,12.0,Heinrich Klaasen,0.88
+292,2025,2025-04-19,Wankhede Stadium,Mumbai,Sunrisers Hyderabad,Gujarat Titans,Gujarat Titans,field,Sunrisers Hyderabad,253,258,Gujarat Titans,1,15.0,Yashasvi Jaiswal,1.18
+293,2025,2025-04-21,Eden Gardens,Kolkata,Kolkata Knight Riders,Rajasthan Royals,Rajasthan Royals,field,Kolkata Knight Riders,240,239,Kolkata Knight Riders,1,15.0,T Natarajan,1.05
+294,2025,2025-04-06,Arun Jaitley Stadium,Delhi,Kolkata Knight Riders,Lucknow Super Giants,Lucknow Super Giants,bat,Lucknow Super Giants,279,224,Lucknow Super Giants,1,8.0,Virat Kohli,1.08
+295,2025,2025-03-28,Wankhede Stadium,Mumbai,Chennai Super Kings,Lucknow Super Giants,Lucknow Super Giants,field,Chennai Super Kings,275,266,Chennai Super Kings,1,,,1.18
+296,2025,2025-04-22,Rajiv Gandhi Intl,Hyderabad,Royal Challengers Bengaluru,Lucknow Super Giants,Royal Challengers Bengaluru,field,Lucknow Super Giants,256,207,Lucknow Super Giants,1,10.0,Rajat Patidar,1.12
+297,2025,2025-03-31,BRSABV Ekana Stadium,Lucknow,Lucknow Super Giants,Punjab Kings,Lucknow Super Giants,bat,Lucknow Super Giants,270,265,Lucknow Super Giants,1,8.0,Axar Patel,0.95
+298,2025,2025-04-24,BRSABV Ekana Stadium,Lucknow,Delhi Capitals,Punjab Kings,Punjab Kings,bat,Punjab Kings,265,236,Punjab Kings,1,15.0,Rajat Patidar,0.95
+299,2025,2025-04-25,Sawai Mansingh Stadium,Jaipur,Gujarat Titans,Punjab Kings,Punjab Kings,field,Gujarat Titans,262,208,Gujarat Titans,1,12.0,Ruturaj Gaikwad,1.1
+300,2025,2025-05-07,Eden Gardens,Kolkata,Delhi Capitals,Chennai Super Kings,Delhi Capitals,field,Chennai Super Kings,260,246,Chennai Super Kings,1,11.0,MS Dhoni,1.05

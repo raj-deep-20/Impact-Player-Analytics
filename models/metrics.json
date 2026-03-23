@@ -1,0 +1,73 @@
+{
+  "classifier": {
+    "cv_roc_auc_mean": 0.9254,
+    "cv_roc_auc_std": 0.0275,
+    "top_features": [
+      "required_rpo",
+      "is_chasing",
+      "cum_runs",
+      "win_prob_pre",
+      "last3_rpo",
+      "over_num",
+      "balls_remaining",
+      "current_rpo"
+    ],
+    "feature_importance": {
+      "required_rpo": 0.33053,
+      "is_chasing": 0.14629,
+      "cum_runs": 0.11743,
+      "win_prob_pre": 0.10539,
+      "last3_rpo": 0.04603,
+      "over_num": 0.04483,
+      "balls_remaining": 0.04204,
+      "current_rpo": 0.03611,
+      "pp_runs": 0.02686,
+      "sub_form": 0.01588,
+      "cum_wickets": 0.015,
+      "boundary_rate": 0.01302,
+      "sub_auction_val": 0.0122,
+      "pp_wickets": 0.01184,
+      "wickets_remaining": 0.01155,
+      "venue_factor": 0.00743,
+      "venue_avg_score": 0.00665,
+      "sub_player_type": 0.00481,
+      "last3_wickets": 0.00184,
+      "is_wankhede": 0.00165,
+      "season_year": 0.0016,
+      "rate_differential": 0.00098,
+      "phase_int": 3e-05,
+      "is_chinnaswamy": 0.0,
+      "has_impact_rule": 0.0
+    }
+  },
+  "regressor": {
+    "cv_mae_mean": 3.13,
+    "cv_mae_std": 0.81,
+    "top_features": [
+      "perf_index",
+      "auction_price_cr",
+      "batting_avg",
+      "matches",
+      "bowling_contribution",
+      "value_per_cr",
+      "form_trajectory",
+      "economy"
+    ],
+    "feature_importance": {
+      "perf_index": 0.54318,
+      "auction_price_cr": 0.10819,
+      "batting_avg": 0.10585,
+      "matches": 0.06116,
+      "bowling_contribution": 0.05156,
+      "value_per_cr": 0.04049,
+      "form_trajectory": 0.02427,
+      "economy": 0.01767,
+      "sixes_per_match": 0.01448,
+      "batting_contribution": 0.0081,
+      "season": 0.00711,
+      "strike_rate": 0.00641,
+      "player_type_int": 0.00621,
+      "form_score": 0.00533
+    }
+  }
+}

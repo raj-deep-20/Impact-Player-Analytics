@@ -1,0 +1,103 @@
+player,season,team,player_type,auction_price_cr,form_score,matches,runs,batting_avg,strike_rate,fours,sixes,wickets,economy,fantasy_pts_avg,roi_score
+Virat Kohli,2023,Royal Challengers Bengaluru,top_order,21.0,0.88,13,459,38.2,117.4,34,25,0,0.0,42.7,2.03
+Virat Kohli,2024,Royal Challengers Bengaluru,top_order,21.0,0.88,10,277,30.8,115.7,17,21,0,0.0,34.8,1.66
+Virat Kohli,2025,Royal Challengers Bengaluru,top_order,21.0,0.88,12,315,31.5,127.0,21,18,0,0.0,32.0,1.52
+Rohit Sharma,2023,Mumbai Indians,opener,16.3,0.74,16,394,24.6,111.1,31,23,0,0.0,30.2,1.85
+Rohit Sharma,2024,Mumbai Indians,opener,16.3,0.74,11,369,46.1,116.8,23,20,0,0.0,40.4,2.48
+Rohit Sharma,2025,Mumbai Indians,opener,16.3,0.74,15,301,23.2,133.1,26,20,0,0.0,25.3,1.55
+Shubman Gill,2023,Gujarat Titans,opener,14.9,0.82,13,319,24.5,132.3,26,17,0,0.0,30.1,2.02
+Shubman Gill,2024,Gujarat Titans,opener,14.9,0.82,11,243,30.4,97.8,20,10,0,0.0,26.8,1.8
+Shubman Gill,2025,Gujarat Titans,opener,14.9,0.82,14,444,37.0,131.9,41,30,0,0.0,39.8,2.67
+KL Rahul,2023,Lucknow Super Giants,wicketkeeper,18.0,0.79,11,272,34.0,104.3,24,15,0,0.0,30.7,1.71
+KL Rahul,2024,Lucknow Super Giants,wicketkeeper,18.0,0.79,11,423,47.0,95.4,37,36,0,0.0,49.5,2.75
+KL Rahul,2025,Lucknow Super Giants,wicketkeeper,18.0,0.79,14,265,20.4,125.3,20,23,0,0.0,24.5,1.36
+Ruturaj Gaikwad,2023,Chennai Super Kings,opener,18.0,0.81,12,396,44.0,124.8,33,28,0,0.0,41.4,2.3
+Ruturaj Gaikwad,2024,Chennai Super Kings,opener,18.0,0.81,12,448,37.3,142.4,40,29,0,0.0,46.5,2.58
+Ruturaj Gaikwad,2025,Chennai Super Kings,opener,18.0,0.81,15,241,17.2,135.2,22,10,0,0.0,19.7,1.09
+Yashasvi Jaiswal,2023,Rajasthan Royals,opener,18.0,0.9,13,251,20.9,120.4,18,20,0,0.0,24.7,1.37
+Yashasvi Jaiswal,2024,Rajasthan Royals,opener,18.0,0.9,13,507,39.0,153.8,37,27,0,0.0,46.9,2.61
+Yashasvi Jaiswal,2025,Rajasthan Royals,opener,18.0,0.9,15,417,32.1,142.1,27,21,0,0.0,33.2,1.84
+Travis Head,2023,Sunrisers Hyderabad,opener,6.8,0.85,15,271,22.6,137.3,26,24,0,0.0,23.8,3.5
+Travis Head,2024,Sunrisers Hyderabad,opener,6.8,0.85,16,211,13.2,109.8,18,16,0,0.0,17.1,2.51
+Travis Head,2025,Sunrisers Hyderabad,opener,6.8,0.85,12,299,29.9,129.9,27,24,0,0.0,32.2,4.73
+Faf du Plessis,2023,Royal Challengers Bengaluru,opener,7.0,0.72,14,191,17.4,101.9,15,9,0,0.0,16.9,2.41
+Faf du Plessis,2024,Royal Challengers Bengaluru,opener,7.0,0.72,14,459,41.7,119.0,28,31,0,0.0,40.1,5.72
+Faf du Plessis,2025,Royal Challengers Bengaluru,opener,7.0,0.72,15,401,28.6,96.5,33,32,0,0.0,34.0,4.86
+Quinton de Kock,2023,Kolkata Knight Riders,wicketkeeper,3.6,0.78,14,279,25.4,112.7,22,13,0,0.0,24.2,6.73
+Quinton de Kock,2024,Kolkata Knight Riders,wicketkeeper,3.6,0.78,13,202,20.2,101.8,14,13,0,0.0,19.5,5.43
+Quinton de Kock,2025,Kolkata Knight Riders,wicketkeeper,3.6,0.78,15,458,38.2,146.0,38,30,0,0.0,37.9,10.52
+MS Dhoni,2023,Chennai Super Kings,wicketkeeper,4.0,0.71,13,361,36.1,120.5,27,22,0,0.0,34.2,8.54
+MS Dhoni,2024,Chennai Super Kings,wicketkeeper,4.0,0.71,16,381,25.4,109.8,27,34,0,0.0,30.5,7.62
+MS Dhoni,2025,Chennai Super Kings,wicketkeeper,4.0,0.71,16,430,30.7,122.4,36,29,0,0.0,33.5,8.38
+Hardik Pandya,2023,Mumbai Indians,allrounder,15.0,0.76,12,201,20.1,94.3,14,12,7,12.01,37.6,2.51
+Hardik Pandya,2024,Mumbai Indians,allrounder,15.0,0.76,15,135,10.4,107.1,9,8,6,10.82,23.1,1.54
+Hardik Pandya,2025,Mumbai Indians,allrounder,15.0,0.76,13,215,19.5,94.6,15,12,11,12.81,43.5,2.9
+Rishabh Pant,2023,Delhi Capitals,wicketkeeper,27.0,0.83,15,262,20.2,144.7,18,16,0,0.0,21.6,0.8
+Rishabh Pant,2024,Delhi Capitals,wicketkeeper,27.0,0.83,12,334,27.8,109.0,22,16,0,0.0,33.3,1.23
+Rishabh Pant,2025,Delhi Capitals,wicketkeeper,27.0,0.83,10,518,57.6,125.8,38,31,0,0.0,63.0,2.33
+Heinrich Klaasen,2023,Sunrisers Hyderabad,finisher,5.25,0.88,12,440,36.7,138.8,29,39,0,0.0,46.6,8.87
+Heinrich Klaasen,2024,Sunrisers Hyderabad,finisher,5.25,0.88,10,373,53.3,136.0,32,20,0,0.0,45.7,8.7
+Heinrich Klaasen,2025,Sunrisers Hyderabad,finisher,5.25,0.88,14,267,19.1,136.2,23,12,0,0.0,23.3,4.44
+Rinku Singh,2023,Kolkata Knight Riders,finisher,13.0,0.86,12,264,26.4,118.3,25,20,0,0.0,28.4,2.19
+Rinku Singh,2024,Kolkata Knight Riders,finisher,13.0,0.86,12,317,35.2,136.0,29,14,0,0.0,32.2,2.47
+Rinku Singh,2025,Kolkata Knight Riders,finisher,13.0,0.86,11,323,32.3,123.0,23,23,0,0.0,36.7,2.83
+Glenn Maxwell,2023,Royal Challengers Bengaluru,allrounder,11.0,0.77,14,263,21.9,104.0,18,15,12,11.32,46.3,4.21
+Glenn Maxwell,2024,Royal Challengers Bengaluru,allrounder,11.0,0.77,13,247,22.5,89.9,17,14,14,10.9,52.2,4.75
+Glenn Maxwell,2025,Royal Challengers Bengaluru,allrounder,11.0,0.77,16,277,19.8,105.8,19,16,7,10.26,33.8,3.07
+Suryakumar Yadav,2023,Mumbai Indians,finisher,16.35,0.92,15,502,41.8,114.6,46,34,0,0.0,41.9,2.56
+Suryakumar Yadav,2024,Mumbai Indians,finisher,16.35,0.92,15,244,20.3,147.1,19,14,0,0.0,20.2,1.24
+Suryakumar Yadav,2025,Mumbai Indians,finisher,16.35,0.92,12,347,31.5,153.3,22,16,0,0.0,34.4,2.1
+Tilak Varma,2023,Mumbai Indians,middle_order,8.5,0.84,13,351,35.1,131.1,32,18,0,0.0,33.2,3.9
+Tilak Varma,2024,Mumbai Indians,middle_order,8.5,0.84,12,218,21.8,133.5,13,15,0,0.0,22.8,2.68
+Tilak Varma,2025,Mumbai Indians,middle_order,8.5,0.84,12,407,45.2,125.1,37,32,0,0.0,43.3,5.1
+Rajat Patidar,2023,Royal Challengers Bengaluru,middle_order,11.0,0.8,13,273,24.8,111.0,24,13,0,0.0,25.8,2.34
+Rajat Patidar,2024,Royal Challengers Bengaluru,middle_order,11.0,0.8,12,465,46.5,105.1,44,26,0,0.0,47.8,4.34
+Rajat Patidar,2025,Royal Challengers Bengaluru,middle_order,11.0,0.8,13,247,24.7,142.7,17,22,0,0.0,24.6,2.24
+Abhishek Sharma,2023,Sunrisers Hyderabad,opener,14.0,0.87,12,354,39.3,146.3,23,14,0,0.0,34.8,2.48
+Abhishek Sharma,2024,Sunrisers Hyderabad,opener,14.0,0.87,15,405,31.2,125.3,37,27,0,0.0,33.9,2.42
+Abhishek Sharma,2025,Sunrisers Hyderabad,opener,14.0,0.87,14,325,25.0,157.7,30,25,0,0.0,29.8,2.13
+Nitish Kumar Reddy,2023,Sunrisers Hyderabad,allrounder,6.0,0.82,16,221,15.8,115.3,15,13,8,9.56,31.2,5.2
+Nitish Kumar Reddy,2024,Sunrisers Hyderabad,allrounder,6.0,0.82,14,313,26.1,112.2,21,18,7,11.24,41.6,6.93
+Nitish Kumar Reddy,2025,Sunrisers Hyderabad,allrounder,6.0,0.82,14,177,14.8,108.1,12,10,14,11.42,42.6,7.1
+Jasprit Bumrah,2023,Mumbai Indians,pace_death,18.0,0.94,16,34,5.7,130.4,0,0,16,7.83,28.9,1.61
+Jasprit Bumrah,2024,Mumbai Indians,pace_death,18.0,0.94,13,73,24.3,130.2,0,0,22,7.76,50.8,2.82
+Jasprit Bumrah,2025,Mumbai Indians,pace_death,18.0,0.94,13,42,14.0,114.8,0,0,15,10.12,34.3,1.91
+Mohammed Shami,2023,Gujarat Titans,pace_powerplay,10.0,0.88,14,56,14.0,117.2,0,0,14,8.62,31.6,3.16
+Mohammed Shami,2024,Gujarat Titans,pace_powerplay,10.0,0.88,10,35,35.0,93.5,0,0,24,8.38,66.4,6.64
+Mohammed Shami,2025,Gujarat Titans,pace_powerplay,10.0,0.88,10,54,54.0,120.7,0,0,17,9.03,51.6,5.16
+Rashid Khan,2023,Gujarat Titans,spinner,18.0,0.91,10,62,62.0,98.3,0,0,21,9.17,62.4,3.47
+Rashid Khan,2024,Gujarat Titans,spinner,18.0,0.91,11,56,56.0,120.1,0,0,24,8.55,63.0,3.5
+Rashid Khan,2025,Gujarat Titans,spinner,18.0,0.91,12,41,20.5,120.7,0,0,15,7.92,37.1,2.06
+Yuzvendra Chahal,2023,Rajasthan Royals,spinner,18.0,0.86,15,21,4.2,86.8,0,0,19,8.85,34.7,1.93
+Yuzvendra Chahal,2024,Rajasthan Royals,spinner,18.0,0.86,16,53,8.8,95.2,0,0,16,10.24,30.6,1.7
+Yuzvendra Chahal,2025,Rajasthan Royals,spinner,18.0,0.86,16,37,6.2,104.7,0,0,13,8.16,24.4,1.36
+Arshdeep Singh,2023,Punjab Kings,pace_death,18.0,0.85,15,26,5.2,88.0,0,0,13,11.4,25.1,1.39
+Arshdeep Singh,2024,Punjab Kings,pace_death,18.0,0.85,13,27,9.0,101.1,0,0,19,9.07,40.5,2.25
+Arshdeep Singh,2025,Punjab Kings,pace_death,18.0,0.85,16,19,3.2,115.4,0,0,15,8.64,26.2,1.45
+T Natarajan,2023,Sunrisers Hyderabad,pace_death,10.75,0.83,10,41,41.0,108.0,0,0,21,9.7,59.5,5.53
+T Natarajan,2024,Sunrisers Hyderabad,pace_death,10.75,0.83,16,29,4.8,96.9,0,0,20,11.02,34.6,3.22
+T Natarajan,2025,Sunrisers Hyderabad,pace_death,10.75,0.83,10,47,47.0,110.5,0,0,14,11.11,42.6,3.96
+Varun Chakaravarthy,2023,Kolkata Knight Riders,spinner,12.0,0.84,16,35,5.8,91.7,0,0,11,10.7,21.2,1.77
+Varun Chakaravarthy,2024,Kolkata Knight Riders,spinner,12.0,0.84,16,25,4.2,94.8,0,0,17,10.52,29.7,2.47
+Varun Chakaravarthy,2025,Kolkata Knight Riders,spinner,12.0,0.84,16,27,4.5,106.1,0,0,9,10.76,17.3,1.44
+Axar Patel,2023,Delhi Capitals,allrounder,16.5,0.81,12,235,23.5,90.7,16,14,6,12.44,38.8,2.35
+Axar Patel,2024,Delhi Capitals,allrounder,16.5,0.81,15,203,15.6,123.0,14,12,10,10.63,35.2,2.13
+Axar Patel,2025,Delhi Capitals,allrounder,16.5,0.81,14,238,19.8,113.0,16,14,9,10.17,38.9,2.35
+Ravindra Jadeja,2023,Chennai Super Kings,allrounder,18.0,0.8,13,157,14.3,93.5,10,9,12,12.64,40.2,2.23
+Ravindra Jadeja,2024,Chennai Super Kings,allrounder,18.0,0.8,14,188,15.7,111.8,13,11,12,11.93,40.0,2.22
+Ravindra Jadeja,2025,Chennai Super Kings,allrounder,18.0,0.8,14,138,11.5,102.3,9,8,7,10.16,26.8,1.49
+Pat Cummins,2023,Kolkata Knight Riders,allrounder,20.5,0.86,13,178,16.2,118.3,12,10,6,11.51,30.5,1.49
+Pat Cummins,2024,Kolkata Knight Riders,allrounder,20.5,0.86,12,255,25.5,124.0,17,15,9,10.0,47.0,2.29
+Pat Cummins,2025,Kolkata Knight Riders,allrounder,20.5,0.86,14,204,17.0,115.4,14,12,14,9.47,44.9,2.19
+Harshal Patel,2023,Royal Challengers Bengaluru,pace_death,11.75,0.78,15,41,8.2,89.1,0,0,10,11.16,21.3,1.82
+Harshal Patel,2024,Royal Challengers Bengaluru,pace_death,11.75,0.78,12,45,22.5,94.3,0,0,15,11.24,37.4,3.18
+Harshal Patel,2025,Royal Challengers Bengaluru,pace_death,11.75,0.78,13,11,3.7,102.8,0,0,18,11.54,37.4,3.18
+Mayank Yadav,2023,Lucknow Super Giants,pace_powerplay,11.0,0.83,10,57,57.0,85.3,0,0,16,10.39,49.4,4.49
+Mayank Yadav,2024,Lucknow Super Giants,pace_powerplay,11.0,0.83,15,29,5.8,98.6,0,0,18,9.43,33.6,3.05
+Mayank Yadav,2025,Lucknow Super Giants,pace_powerplay,11.0,0.83,15,51,10.2,109.1,0,0,14,10.43,29.2,2.65
+Yash Dayal,2023,Royal Challengers Bengaluru,pace_death,5.0,0.76,15,22,4.4,68.1,0,0,10,12.97,19.8,3.96
+Yash Dayal,2024,Royal Challengers Bengaluru,pace_death,5.0,0.76,16,16,2.7,91.3,0,0,9,12.5,16.6,3.33
+Yash Dayal,2025,Royal Challengers Bengaluru,pace_death,5.0,0.76,15,42,8.4,71.4,0,0,13,11.77,26.4,5.28
+Avesh Khan,2023,Lucknow Super Giants,pace_death,10.0,0.74,13,14,4.7,81.9,0,0,14,12.42,29.9,2.99
+Avesh Khan,2024,Lucknow Super Giants,pace_death,10.0,0.74,16,37,6.2,76.7,0,0,17,10.56,30.7,3.07
+Avesh Khan,2025,Lucknow Super Giants,pace_death,10.0,0.74,10,29,29.0,80.2,0,0,12,13.84,35.4,3.54

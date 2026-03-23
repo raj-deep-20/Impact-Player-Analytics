@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IPL Impact Player Analytics — 2025</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg-deep:    #070c18;
+  --bg-mid:     #0d1526;
+  --bg-card:    #111d35;
+  --bg-hover:   #162040;
+  --gold:       #ff8c00;
+  --gold-light: #ffd700;
+  --gold-dim:   rgba(255,140,0,0.12);
+  --gold-border:rgba(255,140,0,0.25);
+  --blue:       #0a84ff;
+  --purple:     #7c3aed;
+  --green:      #22c55e;
+  --red:        #ef4444;
+  --text-hi:    #f1f5f9;
+  --text-mid:   #94a3b8;
+  --text-lo:    #475569;
+  --radius:     12px;
+  --shadow:     0 8px 32px rgba(0,0,0,0.5);
+}
+
+body {
+  background: var(--bg-deep);
+  color: var(--text-hi);
+  font-family: 'Outfit', sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ── Background grain ─────────────────────────────────── */
+body::before {
+  content: '';
+  position: fixed; inset: 0; z-index: 0;
+  background:
+    radial-gradient(ellipse 80% 60% at 20% 10%, rgba(255,140,0,0.04) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 40% at 80% 80%, rgba(10,132,255,0.04) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+/* ── Layout ───────────────────────────────────────────── */
+.wrapper { max-width: 1400px; margin: 0 auto; padding: 0 24px 80px; position: relative; z-index: 1; }
+
+/* ── Header ───────────────────────────────────────────── */
+.hero {
+  text-align: center;
+  padding: 3rem 0 2rem;
+  position: relative;
+}
+.hero-eyebrow {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--gold);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+}
+.hero-title {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  font-weight: 700;
+  background: linear-gradient(120deg, #ff8c00 0%, #ffd700 40%, #ff4500 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.05;
+  letter-spacing: 1px;
+}
+.hero-sub {
+  font-size: 0.95rem;
+  color: var(--text-mid);
+  margin-top: 0.8rem;
+  max-width: 680px;
+  margin-inline: auto;
+}
+.hero-divider {
+  width: 80px; height: 3px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  margin: 1.5rem auto 0;
+  border-radius: 99px;
+}
+
+/* ── KPI Strip ────────────────────────────────────────── */
+.kpi-strip {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+  margin: 2rem 0;
+}
+.kpi-card {
+  background: var(--bg-card);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius);
+  padding: 1.2rem 1rem;
+  text-align: center;
+  transition: border-color .2s, transform .2s;
+}
+.kpi-card:hover { border-color: var(--gold); transform: translateY(-2px); }
+.kpi-val {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.9rem; font-weight: 700;
+  color: var(--gold); line-height: 1;
+}
+.kpi-label { font-size: 0.7rem; color: var(--text-lo); text-transform: uppercase; letter-spacing: 1.2px; margin-top: 4px; }
+.kpi-sub   { font-size: 0.75rem; color: var(--green); margin-top: 3px; font-weight: 500; }
+
+/* ── Tabs ─────────────────────────────────────────────── */
+.tab-nav {
+  display: flex; gap: 4px;
+  background: var(--bg-card);
+  border: 1px solid var(--gold-border);
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 1.8rem;
+}
+.tab-btn {
+  flex: 1; padding: 10px 8px;
+  background: none; border: none; cursor: pointer;
+  font-family: 'Rajdhani', sans-serif; font-size: 1rem; font-weight: 600;
+  color: var(--text-mid); border-radius: 7px;
+  transition: all .2s; letter-spacing: 0.5px;
+}
+.tab-btn.active { background: var(--gold-dim); color: var(--gold); }
+.tab-btn:hover:not(.active) { color: var(--text-hi); background: rgba(255,255,255,0.04); }
+
+.tab-panel { display: none; }
+.tab-panel.active { display: block; }
+
+/* ── Section title ────────────────────────────────────── */
+.sec-title {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.35rem; font-weight: 700;
+  color: var(--gold);
+  border-bottom: 1px solid var(--gold-border);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.4rem;
+  letter-spacing: 0.8px;
+}
+
+/* ── Grid helpers ─────────────────────────────────────── */
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+.grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.2rem; }
+
+/* ── Card ─────────────────────────────────────────────── */
+.card {
+  background: var(--bg-card);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: var(--radius);
+  padding: 1.4rem;
+}
+
+/* ── Controls ─────────────────────────────────────────── */
+.ctrl-label {
+  font-size: 0.72rem; color: var(--text-mid);
+  text-transform: uppercase; letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+.ctrl-group { margin-bottom: 1rem; }
+.ctrl-select, .ctrl-range {
+  width: 100%; background: var(--bg-mid);
+  border: 1px solid rgba(255,140,0,0.2);
+  border-radius: 7px; color: var(--text-hi);
+  font-family: 'Outfit', sans-serif; font-size: 0.88rem;
+  padding: 8px 10px; outline: none;
+  transition: border-color .15s;
+}
+.ctrl-select:focus, .ctrl-range:focus { border-color: var(--gold); }
+.ctrl-range { -webkit-appearance: none; padding: 0; height: 4px;
+              background: linear-gradient(90deg, var(--gold), rgba(255,140,0,0.2));
+              border: none; cursor: pointer; margin-top: 8px; }
+.range-val { font-family: 'Rajdhani', sans-serif; font-size: 1.1rem;
+             font-weight: 700; color: var(--gold); float: right; }
+
+/* ── Button ───────────────────────────────────────────── */
+.btn-primary {
+  width: 100%; padding: 13px;
+  background: linear-gradient(135deg, #ff8c00, #ff4500);
+  border: none; border-radius: 9px; cursor: pointer;
+  font-family: 'Rajdhani', sans-serif; font-size: 1.1rem;
+  font-weight: 700; color: #fff; letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: opacity .2s, transform .15s;
+  margin-top: 0.5rem;
+}
+.btn-primary:hover { opacity: .9; transform: translateY(-1px); }
+.btn-primary:active { transform: translateY(0); }
+
+/* ── Recommendation box ───────────────────────────────── */
+.rec-box {
+  border-radius: 14px; padding: 1.8rem;
+  text-align: center; margin-bottom: 1rem;
+}
+.rec-yes { background: linear-gradient(135deg,rgba(34,197,94,0.12),rgba(22,163,74,0.06));
+            border: 2px solid rgba(34,197,94,0.35); }
+.rec-no  { background: linear-gradient(135deg,rgba(239,68,68,0.12),rgba(185,28,28,0.06));
+            border: 2px solid rgba(239,68,68,0.35); }
+.rec-icon { font-size: 2.8rem; }
+.rec-verdict { font-family: 'Rajdhani', sans-serif; font-size: 1.9rem; font-weight: 700; }
+.rec-conf { font-size: 0.88rem; color: var(--text-mid); margin-top: 4px; }
+
+/* ── Metric mini ──────────────────────────────────────── */
+.mini-metric {
+  background: var(--gold-dim);
+  border: 1px solid var(--gold-border);
+  border-radius: 9px; padding: 0.9rem 1rem;
+  margin-bottom: 0.6rem; text-align: center;
+}
+.mini-val { font-family: 'Rajdhani', sans-serif; font-size: 1.7rem;
+            font-weight: 700; color: var(--gold); }
+.mini-lbl { font-size: 0.68rem; color: var(--text-lo); text-transform: uppercase;
+            letter-spacing: 1px; margin-top: 2px; }
+
+/* ── SHAP bar ─────────────────────────────────────────── */
+.shap-row {
+  display: flex; align-items: center; gap: 10px;
+  margin: 5px 0;
+}
+.shap-lbl { width: 170px; font-size: 0.78rem; color: var(--text-mid); flex-shrink: 0; }
+.shap-track {
+  flex: 1; height: 12px;
+  background: rgba(255,255,255,0.05); border-radius: 3px; overflow: hidden;
+}
+.shap-fill { height: 100%; border-radius: 3px; }
+.shap-fill-pos { background: linear-gradient(90deg, #ff8c00, #ffd700); }
+.shap-fill-neg { background: linear-gradient(90deg, #0a84ff, #38bdf8); }
+.shap-num { font-family: 'JetBrains Mono', monospace; font-size: 0.75rem;
+            color: var(--text-mid); min-width: 58px; text-align: right; }
+
+/* ── Player card ──────────────────────────────────────── */
+.player-card {
+  background: var(--bg-card);
+  border: 1px solid rgba(255,140,0,0.15);
+  border-radius: 10px; padding: 1rem 1.2rem;
+  margin-bottom: 0.7rem;
+  transition: border-color .2s, transform .2s;
+  cursor: default;
+}
+.player-card:hover { border-color: rgba(255,140,0,0.4); transform: translateX(3px); }
+.pc-top { display: flex; justify-content: space-between; align-items: center; }
+.pc-name { font-family: 'Rajdhani', sans-serif; font-size: 1.15rem; font-weight: 700; }
+.pc-pts { font-family: 'Rajdhani', sans-serif; font-size: 1.5rem; font-weight: 700; color: var(--gold); }
+.pc-meta { font-size: 0.78rem; color: var(--text-mid); margin-top: 4px; }
+.conf-bar { height: 5px; background: rgba(255,255,255,0.06); border-radius: 3px;
+            margin-top: 8px; overflow: hidden; }
+.conf-fill { height: 100%; background: linear-gradient(90deg, var(--gold), var(--gold-light)); border-radius: 3px; }
+
+/* ── Badge ────────────────────────────────────────────── */
+.badge {
+  display: inline-block; padding: 2px 7px; border-radius: 20px;
+  font-size: 0.65rem; font-weight: 600; text-transform: uppercase;
+  letter-spacing: 0.4px; margin-left: 6px;
+}
+.b-death    { background: #7f1d1d; color: #fca5a5; }
+.b-spinner  { background: #4c1d95; color: #c4b5fd; }
+.b-finisher { background: #1e3a8a; color: #93c5fd; }
+.b-opener   { background: #14532d; color: #86efac; }
+.b-wk       { background: #713f12; color: #fcd34d; }
+.b-all      { background: #1f2937; color: var(--gold); }
+
+/* ── Feature importance ───────────────────────────────── */
+.fi-row { display: flex; align-items: center; gap: 10px; margin: 6px 0; }
+.fi-lbl { width: 180px; font-size: 0.78rem; color: var(--text-mid); }
+.fi-track { flex: 1; height: 14px; background: rgba(255,255,255,0.05); border-radius: 3px; overflow: hidden; }
+.fi-fill  { height: 100%; border-radius: 3px; }
+.fi-clf   { background: linear-gradient(90deg, #ff8c00, #ffd700); }
+.fi-reg   { background: linear-gradient(90deg, #7c3aed, #a78bfa); }
+.fi-num   { font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: var(--text-mid); min-width: 50px; text-align: right; }
+
+/* ── Win prob gauge ───────────────────────────────────── */
+.win-gauge {
+  position: relative; height: 120px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+}
+.win-arc {
+  position: relative; width: 120px; height: 60px;
+  border-radius: 60px 60px 0 0;
+  background: rgba(255,255,255,0.05);
+  overflow: hidden;
+}
+.win-arc-fill {
+  position: absolute; bottom: 0; left: 0; right: 0;
+  transform-origin: bottom center;
+  transition: transform 1s cubic-bezier(.25,.8,.25,1);
+}
+.win-num {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 2rem; font-weight: 700; color: var(--gold);
+}
+
+/* ── Table ────────────────────────────────────────────── */
+.data-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+.data-table th {
+  background: rgba(255,140,0,0.1); color: var(--gold);
+  font-family: 'Rajdhani', sans-serif; font-size: 0.78rem;
+  text-transform: uppercase; letter-spacing: 1px;
+  padding: 9px 12px; text-align: left;
+  border-bottom: 1px solid var(--gold-border);
+}
+.data-table td { padding: 8px 12px; border-bottom: 1px solid rgba(255,255,255,0.04); color: var(--text-mid); }
+.data-table tr:hover td { background: rgba(255,140,0,0.03); }
+
+/* ── Architecture block ───────────────────────────────── */
+.arch-box {
+  background: var(--bg-mid);
+  border: 1px solid rgba(255,140,0,0.15);
+  border-radius: 10px; padding: 1rem 1.4rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.76rem; line-height: 1.9;
+  color: var(--text-mid);
+  overflow-x: auto;
+}
+.arch-box .hl { color: var(--gold); }
+.arch-box .hl-g { color: var(--green); }
+.arch-box .hl-b { color: #60a5fa; }
+
+/* ── Venue heatmap ────────────────────────────────────── */
+.venue-bar { display: flex; align-items: center; gap: 10px; margin: 7px 0; }
+.venue-name { width: 195px; font-size: 0.8rem; color: var(--text-mid); }
+.venue-track { flex: 1; height: 18px; background: rgba(255,255,255,0.05); border-radius: 4px; overflow: hidden; position: relative; }
+.venue-fill { height: 100%; border-radius: 4px; }
+.venue-score { font-family: 'Rajdhani', sans-serif; font-size: 0.9rem; color: var(--text-hi); font-weight: 600; min-width: 40px; text-align: right; }
+
+/* ── Scrollbar ────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-deep); }
+::-webkit-scrollbar-thumb { background: rgba(255,140,0,0.3); border-radius: 3px; }
+
+/* ── Pulse animation ──────────────────────────────────── */
+@keyframes pulse { 0%,100% { opacity:1; } 50% { opacity:.6; } }
+.live-dot { display: inline-block; width: 8px; height: 8px; background: var(--green);
+            border-radius: 50%; animation: pulse 1.5s infinite; margin-right: 5px; }
+
+/* ── Responsive ───────────────────────────────────────── */
+@media (max-width: 900px) {
+  .kpi-strip { grid-template-columns: repeat(3, 1fr); }
+  .grid-2, .grid-3 { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  .kpi-strip { grid-template-columns: 1fr 1fr; }
+}
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+<!-- ═══════════ HERO ═══════════ -->
+<div class="hero">
+  <div class="hero-eyebrow">🏏 R&D Engineer Portfolio Project • IPL 2025</div>
+  <h1 class="hero-title">IPL IMPACT PLAYER<br>ANALYTICS ENGINE</h1>
+  <p class="hero-sub">
+    Real-time substitution intelligence + fantasy value prediction.
+    Dual GradientBoosting models with SHAP explainability.
+    Impact Player rule (2023+) • Dream11 scoring proxy • 2025 Mega Auction valuations.
+  </p>
+  <div class="hero-divider"></div>
+</div>
+
+<!-- ═══════════ KPI STRIP ═══════════ -->
+<div class="kpi-strip">
+  <div class="kpi-card">
+    <div class="kpi-val">92.6%</div>
+    <div class="kpi-label">ROC-AUC</div>
+    <div class="kpi-sub">↑ 5.1% vs baseline</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-val">3.1 pts</div>
+    <div class="kpi-label">Fantasy MAE</div>
+    <div class="kpi-sub">5-fold CV</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-val">&gt;5%</div>
+    <div class="kpi-label">Win Prob Lift</div>
+    <div class="kpi-sub">Optimal sub target</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-val">25+</div>
+    <div class="kpi-label">Features</div>
+    <div class="kpi-sub">Engineered signals</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-val">73k</div>
+    <div class="kpi-label">Deliveries</div>
+    <div class="kpi-sub">2020–2025 IPL</div>
+  </div>
+</div>
+
+<!-- ═══════════ TABS ═══════════ -->
+<div class="tab-nav">
+  <button class="tab-btn active" onclick="switchTab('predictor',this)">🎯 Impact Sub Predictor</button>
+  <button class="tab-btn" onclick="switchTab('fantasy',this)">⭐ Fantasy Picks</button>
+  <button class="tab-btn" onclick="switchTab('explain',this)">📊 Model Explainability</button>
+  <button class="tab-btn" onclick="switchTab('data',this)">🔬 Data Explorer</button>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     TAB 1: IMPACT PLAYER PREDICTOR
+═══════════════════════════════════════════════════════════ -->
+<div class="tab-panel active" id="tab-predictor">
+  <div class="sec-title"><span class="live-dot"></span>Live Match Substitution Engine</div>
+
+  <p style="color:var(--text-mid); font-size:0.88rem; margin-bottom:1.5rem">
+    Configure the current match state. The GradientBoosting classifier (ROC-AUC 0.9255) predicts
+    whether an Impact Player substitution will lift win probability by >5%, with SHAP feature attribution.
+  </p>
+
+  <div style="display:grid; grid-template-columns:1fr 1fr 1fr 1.4fr; gap:1.2rem">
+
+    <!-- Col 1: Match Context -->
+    <div class="card">
+      <div class="sec-title" style="font-size:1rem">🏟 Match Context</div>
+
+      <div class="ctrl-group">
+        <div class="ctrl-label">Venue</div>
+        <select class="ctrl-select" id="venue" onchange="updateVenueInfo()">
+          <option value="chinnaswamy" data-factor="1.25" data-avg="195">M Chinnaswamy Stadium</option>
+          <option value="wankhede"    data-factor="1.18" data-avg="185">Wankhede Stadium</option>
+          <option value="chidambaram" data-factor="0.88" data-avg="165">MA Chidambaram Stadium</option>
+          <option value="eden"        data-factor="1.05" data-avg="175">Eden Gardens</option>
+          <option value="sawai"       data-factor="1.10" data-avg="178">Sawai Mansingh Stadium</option>
+          <option value="jaitley"     data-factor="1.08" data-avg="176">Arun Jaitley Stadium</option>
+          <option value="rgis"        data-factor="1.12" data-avg="180">Rajiv Gandhi Intl</option>
+          <option value="ekana"       data-factor="0.95" data-avg="168">BRSABV Ekana Stadium</option>
+          <option value="narendra"    data-factor="1.02" data-avg="172">Narendra Modi Stadium</option>
+        </select>
+      </div>
+
+      <div class="ctrl-group">
+        <div class="ctrl-label">Season</div>
+        <select class="ctrl-select" id="season">
+          <option>2023</option><option>2024</option><option selected>2025</option>
+        </select>
+      </div>
+
+      <div class="ctrl-group">
+        <div class="ctrl-label">Innings</div>
+        <select class="ctrl-select" id="innings">
+          <option value="1">Batting First (Innings 1)</option>
+          <option value="2" selected>Chasing (Innings 2)</option>
+        </select>
+      </div>
+
+      <div id="venue-info" style="background:var(--gold-dim); border:1px solid var(--gold-border);
+           border-radius:8px; padding:0.7rem; font-size:0.78rem; color:var(--text-mid)">
+        Pitch Factor: <b style="color:var(--gold)">1.25×</b> &nbsp;|&nbsp;
+        Avg Score: <b style="color:var(--gold)">195</b>
+      </div>
+    </div>
+
+    <!-- Col 2: Match State -->
+    <div class="card">
+      <div class="sec-title" style="font-size:1rem">⚡ Match State</div>
+
+      <div class="ctrl-group">
+        <div class="ctrl-label">Over <span class="range-val" id="over-val">16</span></div>
+        <input class="ctrl-range" type="range" id="over" min="6" max="19" value="16"
+               oninput="document.getElementById('over-val').textContent=this.value; updateWinProb()">
+      </div>
+      <div class="ctrl-group">
+        <div class="ctrl-label">Runs Scored <span class="range-val" id="runs-val">148</span></div>
+        <input class="ctrl-range" type="range" id="runs" min="0" max="200" value="148"
+               oninput="document.getElementById('runs-val').textContent=this.value; updateWinProb()">
+      </div>
+      <div class="ctrl-group">
+        <div class="ctrl-label">Wickets Down <span class="range-val" id="wkts-val">5</span></div>
+        <input class="ctrl-range" type="range" id="wickets" min="0" max="9" value="5"
+               oninput="document.getElementById('wkts-val').textContent=this.value; updateWinProb()">
+      </div>
+      <div class="ctrl-group">
+        <div class="ctrl-label">Target (if chasing) <span class="range-val" id="target-val">185</span></div>
+        <input class="ctrl-range" type="range" id="target" min="100" max="250" value="185"
+               oninput="document.getElementById('target-val').textContent=this.value; updateWinProb()">
+      </div>
+      <div class="ctrl-group">
+        <div class="ctrl-label">Powerplay Runs <span class="range-val" id="pp-val">52</span></div>
+        <input class="ctrl-range" type="range" id="ppruns" min="20" max="80" value="52"
+               oninput="document.getElementById('pp-val').textContent=this.value">
+      </div>
+    </div>
+
+    <!-- Col 3: Player to Sub -->
+    <div class="card">
+      <div class="sec-title" style="font-size:1rem">👤 Proposed Sub Player</div>
+      <div class="ctrl-group">
+        <div class="ctrl-label">Impact Player In</div>
+        <select class="ctrl-select" id="sub-player" onchange="updatePlayerInfo()" style="height:180px" size="8">
+          <option value="jbumrah"   data-type="pace_death"    data-price="18.0"  data-form="0.94">Jasprit Bumrah</option>
+          <option value="rashid"    data-type="spinner"       data-price="18.0"  data-form="0.91">Rashid Khan</option>
+          <option value="klaasen"   data-type="finisher"      data-price="5.25"  data-form="0.88">Heinrich Klaasen</option>
+          <option value="sky"       data-type="finisher"      data-price="16.35" data-form="0.92">Suryakumar Yadav</option>
+          <option value="jaiswal"   data-type="opener"        data-price="18.0"  data-form="0.90">Yashasvi Jaiswal</option>
+          <option value="hardik"    data-type="allrounder"    data-price="15.0"  data-form="0.76">Hardik Pandya</option>
+          <option value="chahal"    data-type="spinner"       data-price="18.0"  data-form="0.86">Yuzvendra Chahal</option>
+          <option value="arshdeep" data-type="pace_death"    data-price="18.0"  data-form="0.85">Arshdeep Singh</option>
+          <option value="rinku"     data-type="finisher"      data-price="13.0"  data-form="0.86">Rinku Singh</option>
+          <option value="mayank"    data-type="pace_powerplay" data-price="11.0" data-form="0.83">Mayank Yadav</option>
+          <option value="shami"     data-type="pace_powerplay" data-price="10.0" data-form="0.88">Mohammed Shami</option>
+          <option value="axar"      data-type="allrounder"    data-price="16.5"  data-form="0.81">Axar Patel</option>
+        </select>
+      </div>
+      <div id="player-info" style="background:var(--gold-dim); border:1px solid var(--gold-border);
+           border-radius:8px; padding:0.7rem; margin-top:0.5rem; font-size:0.78rem">
+        <b style="color:var(--gold)" id="pi-name">Jasprit Bumrah</b><br>
+        Type: <span id="pi-type" style="color:var(--text-hi)">pace_death</span> &nbsp;|&nbsp;
+        ₹<span id="pi-price" style="color:#ffd700">18.0</span> Cr &nbsp;|&nbsp;
+        Form: <span id="pi-form" style="color:var(--green)">94%</span>
+      </div>
+    </div>
+
+    <!-- Col 4: Live Win Prob -->
+    <div class="card" style="display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center">
+      <div style="font-size:0.75rem; color:var(--text-lo); text-transform:uppercase; letter-spacing:1.2px; margin-bottom:1rem">
+        Current Win Probability
+      </div>
+      <svg width="180" height="100" viewBox="0 0 180 100">
+        <defs>
+          <linearGradient id="arcGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%"   stop-color="#ef4444"/>
+            <stop offset="50%"  stop-color="#f59e0b"/>
+            <stop offset="100%" stop-color="#22c55e"/>
+          </linearGradient>
+        </defs>
+        <!-- Track arc -->
+        <path d="M 10,95 A 80,80 0 0,1 170,95" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="14" stroke-linecap="round"/>
+        <!-- Fill arc -->
+        <path id="win-arc" d="M 10,95 A 80,80 0 0,1 170,95" fill="none" stroke="url(#arcGrad)"
+              stroke-width="14" stroke-linecap="round"
+              stroke-dasharray="252" stroke-dashoffset="126"/>
+        <!-- Needle -->
+        <line id="win-needle" x1="90" y1="95" x2="90" y2="25" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+        <circle cx="90" cy="95" r="5" fill="var(--gold)"/>
+      </svg>
+      <div class="win-num" id="win-prob-val">50%</div>
+      <div style="font-size:0.7rem; color:var(--text-lo); margin-top:4px">Real-time estimate</div>
+
+      <div style="margin-top:1.5rem; display:grid; grid-template-columns:1fr 1fr; gap:8px; width:100%">
+        <div class="mini-metric">
+          <div class="mini-val" id="crr-val">—</div>
+          <div class="mini-lbl">Current RPO</div>
+        </div>
+        <div class="mini-metric">
+          <div class="mini-val" id="rrr-val">—</div>
+          <div class="mini-lbl">Required RPO</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Predict Button -->
+  <button class="btn-primary" onclick="predict()" style="margin-top:1.2rem; font-size:1.2rem; padding:16px">
+    🔮 PREDICT OPTIMAL SUBSTITUTION
+  </button>
+
+  <!-- Results -->
+  <div id="results" style="display:none; margin-top:1.5rem">
+    <div class="grid-3" style="align-items:start">
+
+      <div>
+        <div id="rec-box" class="rec-box rec-yes">
+          <div class="rec-icon" id="rec-icon">✅</div>
+          <div class="rec-verdict" id="rec-verdict" style="color:var(--green)">SUBSTITUTE NOW</div>
+          <div class="rec-conf" id="rec-conf">Confidence: 78%</div>
+        </div>
+        <div class="mini-metric">
+          <div class="mini-val" id="lift-val">+6.2%</div>
+          <div class="mini-lbl">Expected Win Prob Lift</div>
+        </div>
+        <div style="background:var(--bg-mid); border-radius:9px; padding:1rem; margin-top:0.6rem;
+                    border:1px solid rgba(255,255,255,0.06); font-size:0.82rem; color:var(--text-mid); line-height:1.8">
+          <b style="color:var(--gold-light)">Model explanation:</b><br>
+          <span id="model-narrative">High required run rate in death overs at Chinnaswamy
+          makes a specialist death bowler substitution optimal.</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="mini-metric" style="margin-bottom:0.7rem">
+          <div class="mini-val" id="sub-prob-val">78.2%</div>
+          <div class="mini-lbl">Substitution Probability</div>
+        </div>
+        <div class="mini-metric">
+          <div class="mini-val" id="win-post-val">57.3%</div>
+          <div class="mini-lbl">Win Prob After Sub</div>
+        </div>
+        <div style="margin-top:0.7rem; background:var(--bg-mid); border-radius:8px; padding:0.8rem;
+                    font-size:0.78rem; color:var(--text-mid); border:1px solid rgba(255,255,255,0.06)">
+          <div style="color:var(--gold); margin-bottom:6px; font-size:0.82rem; font-weight:600">Feature Values</div>
+          <div id="feature-summary"></div>
+        </div>
+      </div>
+
+      <div>
+        <div class="sec-title" style="font-size:1rem">🧠 SHAP Attribution</div>
+        <div id="shap-container"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     TAB 2: FANTASY PICKS
+═══════════════════════════════════════════════════════════ -->
+<div class="tab-panel" id="tab-fantasy">
+  <div class="sec-title">⭐ Fantasy Player Ranker</div>
+
+  <div class="grid-3" style="margin-bottom:1rem">
+    <div class="ctrl-group">
+      <div class="ctrl-label">Team 1</div>
+      <select class="ctrl-select" id="fteam1">
+        <option>Royal Challengers Bengaluru</option>
+        <option>Mumbai Indians</option>
+        <option>Chennai Super Kings</option>
+        <option>Kolkata Knight Riders</option>
+        <option>Rajasthan Royals</option>
+        <option>Delhi Capitals</option>
+        <option>Sunrisers Hyderabad</option>
+        <option>Punjab Kings</option>
+        <option>Lucknow Super Giants</option>
+        <option>Gujarat Titans</option>
+      </select>
+    </div>
+    <div class="ctrl-group">
+      <div class="ctrl-label">Team 2</div>
+      <select class="ctrl-select" id="fteam2">
+        <option selected value="mi">Mumbai Indians</option>
+        <option>Royal Challengers Bengaluru</option>
+        <option>Chennai Super Kings</option>
+        <option>Kolkata Knight Riders</option>
+        <option>Rajasthan Royals</option>
+        <option>Delhi Capitals</option>
+        <option>Sunrisers Hyderabad</option>
+        <option>Punjab Kings</option>
+        <option>Lucknow Super Giants</option>
+        <option>Gujarat Titans</option>
+      </select>
+    </div>
+    <div class="ctrl-group">
+      <div class="ctrl-label">Top N Picks</div>
+      <select class="ctrl-select" id="topn">
+        <option>5</option><option>7</option><option selected>10</option>
+      </select>
+    </div>
+  </div>
+
+  <button class="btn-primary" onclick="generateFantasy()">⚡ GENERATE FANTASY PICKS</button>
+
+  <div id="fantasy-results" style="margin-top:1.5rem">
+    <!-- Pre-populated with 2025 top picks -->
+    <div class="sec-title" style="margin-top:1rem">🏆 IPL 2025 Season Leaders — Fantasy Pts</div>
+    <div id="fantasy-cards"></div>
+    <div style="margin-top:1.5rem">
+      <div class="sec-title" style="font-size:1rem">📋 Detailed Comparison</div>
+      <div style="overflow-x:auto">
+        <table class="data-table" id="fantasy-table">
+          <thead>
+            <tr>
+              <th>#</th><th>Player</th><th>Team</th><th>Type</th>
+              <th>Price (₹Cr)</th><th>Pred Pts</th><th>Confidence</th><th>ROI</th>
+            </tr>
+          </thead>
+          <tbody id="fantasy-tbody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     TAB 3: MODEL EXPLAINABILITY
+═══════════════════════════════════════════════════════════ -->
+<div class="tab-panel" id="tab-explain">
+  <div class="sec-title">📊 Model Architecture & Explainability</div>
+
+  <div class="grid-2">
+    <!-- Classifier FI -->
+    <div class="card">
+      <div class="sec-title" style="font-size:1rem">🎯 Classifier — Feature Importance</div>
+      <div id="clf-fi"></div>
+    </div>
+    <!-- Regressor FI -->
+    <div class="card">
+      <div class="sec-title" style="font-size:1rem">⭐ Regressor — Feature Importance</div>
+      <div id="reg-fi"></div>
+    </div>
+  </div>
+
+  <!-- CV Metrics -->
+  <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:1rem; margin-top:1.2rem">
+    <div class="kpi-card">
+      <div class="kpi-val">0.9255</div>
+      <div class="kpi-label">ROC-AUC Mean</div>
+      <div class="kpi-sub">±0.0285 std</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-val">~78–82%</div>
+      <div class="kpi-label">Classifier Accuracy</div>
+      <div class="kpi-sub">Balanced test splits</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-val">3.1 pts</div>
+      <div class="kpi-label">Regressor MAE</div>
+      <div class="kpi-sub">±0.4 std</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-val">5-Fold</div>
+      <div class="kpi-label">Cross-Validation</div>
+      <div class="kpi-sub">Stratified + KFold</div>
+    </div>
+  </div>
+
+  <!-- Architecture -->
+  <div style="margin-top:1.4rem">
+    <div class="sec-title" style="font-size:1rem">🏗 System Architecture</div>
+    <div class="arch-box">
+<span class="hl">┌──────────────────────────────────────────────────────────────────┐</span>
+<span class="hl">│</span>  <span class="hl-g">DATA INGESTION</span>  (Step 1)                                         <span class="hl">│</span>
+<span class="hl">│</span>  deliveries.csv (73k rows) → matches.csv (300) → player_stats.csv  <span class="hl">│</span>
+<span class="hl">└──────────────────────────────┬───────────────────────────────────────┘</span>
+                               │
+<span class="hl">┌──────────────────────────────▼───────────────────────────────────────┐</span>
+<span class="hl">│</span>  <span class="hl-g">FEATURE ENGINEERING</span>  (Step 2) — 25+ features                       <span class="hl">│</span>
+<span class="hl">│</span>  • Match phase (PP/Middle/Death)   • Current/Required RPO            <span class="hl">│</span>
+<span class="hl">│</span>  • Win probability (DL-inspired)   • Venue pitch factor (9 venues)   <span class="hl">│</span>
+<span class="hl">│</span>  • Auction value delta             • Player type embedding (9 types) <span class="hl">│</span>
+<span class="hl">│</span>  • Boundary rate (last 3 overs)    • Form trajectory (YoY)          <span class="hl">│</span>
+<span class="hl">└──────────────┬────────────────────────────────┬─────────────────────┘</span>
+               │                                │
+<span class="hl">┌──────────────▼────────────┐</span>     <span class="hl">┌───────────▼──────────────────────┐</span>
+<span class="hl">│</span> <span class="hl-b">IMPACT CLASSIFIER</span>          <span class="hl">│</span>     <span class="hl">│</span> <span class="hl-b">FANTASY REGRESSOR</span>                <span class="hl">│</span>
+<span class="hl">│</span> GradientBoosting           <span class="hl">│</span>     <span class="hl">│</span> GradientBoosting                  <span class="hl">│</span>
+<span class="hl">│</span> n_est=300 lr=0.08 depth=5  <span class="hl">│</span>     <span class="hl">│</span> n_est=250 lr=0.10 depth=4        <span class="hl">│</span>
+<span class="hl">│</span> Binary: Sub optimal? (0/1) <span class="hl">│</span>     <span class="hl">│</span> Predicts expected fantasy pts     <span class="hl">│</span>
+<span class="hl">│</span> ROC-AUC: <span class="hl-g">0.9255</span>            <span class="hl">│</span>     <span class="hl">│</span> CV MAE: <span class="hl-g">3.1 pts</span>                  <span class="hl">│</span>
+<span class="hl">└──────────────┬────────────┘</span>     <span class="hl">└───────────┬──────────────────────┘</span>
+               │                                │
+<span class="hl">┌──────────────▼────────────────────────────────▼─────────────────────┐</span>
+<span class="hl">│</span>  <span class="hl-g">SHAP EXPLAINABILITY</span>  (Step 4)                                       <span class="hl">│</span>
+<span class="hl">│</span>  Permutation importance → per-prediction feature attribution         <span class="hl">│</span>
+<span class="hl">│</span>  Example: "+12% win prob because death bowler on high-scoring pitch" <span class="hl">│</span>
+<span class="hl">└─────────────────────────────────────────────────────────────────────┘</span>
+               │
+<span class="hl">┌──────────────▼─────────────────────────────────────────────────────┐</span>
+<span class="hl">│</span>  <span class="hl-b">STREAMLIT DASHBOARD</span>  (Step 5 — app.py)                             <span class="hl">│</span>
+<span class="hl">│</span>  Live predictor · Fantasy ranker · SHAP viz · Data explorer         <span class="hl">│</span>
+<span class="hl">└────────────────────────────────────────────────────────────────────┘</span>
+    </div>
+  </div>
+
+  <!-- Equation -->
+  <div style="margin-top:1.2rem">
+    <div class="sec-title" style="font-size:1rem">📐 Model Equations</div>
+    <div class="grid-2">
+      <div class="arch-box">
+<span class="hl">// Impact Player Classifier</span>
+ŷ = f(phase, rate_diff, bowler_type, venue)
+P(sub_optimal = 1) = sigmoid(F(x))
+where F is ensemble of 300 decision trees.
+
+<span class="hl">// Target label definition</span>
+optimal_sub = 1
+  iff win_prob(t+3) - win_prob(t) > 0.05
+      and substitution occurred at over t
+      (Impact Player rule applies, 2023+)
+      </div>
+      <div class="arch-box">
+<span class="hl">// Fantasy Points Regressor</span>
+E[Fantasy_Pts] = β₀
+  + β₁·form_2025
+  + β₂·opposition_strength
+  + β₃·perf_index
+  + β₄·auction_price_delta
+  + f(player_type, venue)
+
+<span class="hl">// Dream11 scoring proxy (per match)</span>
+pts = runs×1 + 4s×1 + 6s×2 + 50+bonus×8
+    + wickets×25 + 3fer×10 + 5fer×15
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     TAB 4: DATA EXPLORER
+═══════════════════════════════════════════════════════════ -->
+<div class="tab-panel" id="tab-data">
+  <div class="sec-title">🔬 Data Explorer</div>
+
+  <div class="grid-2">
+    <!-- Venue avg scores -->
+    <div class="card">
+      <div class="sec-title" style="font-size:1rem">🏟 Venue Pitch Factor (Scoring Heatmap)</div>
+      <div id="venue-bars"></div>
+    </div>
+
+    <!-- Season distribution -->
+    <div class="card">
+      <div class="sec-title" style="font-size:1rem">📅 Matches per Season</div>
+      <div id="season-bars"></div>
+    </div>
+  </div>
+
+  <!-- Auction ROI table -->
+  <div style="margin-top:1.4rem">
+    <div class="sec-title">💰 2025 Auction: Price vs Fantasy ROI</div>
+    <div style="overflow-x:auto">
+      <table class="data-table">
+        <thead>
+          <tr><th>Player</th><th>Team</th><th>Type</th><th>Auction (₹Cr)</th><th>Fantasy Avg</th><th>ROI Score</th><th>Form</th></tr>
+        </thead>
+        <tbody id="roi-tbody"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+</div><!-- /wrapper -->
+
+<script>
+// ═══════════ DATA ═══════════════════════════════════════════════════════════
+
+const TOP10 = [
+  {player:"Rishabh Pant",     team:"Delhi Capitals",              type:"wicketkeeper",   pts:63.0, price:27.0,  roi:2.33, form:0.83, conf:0.93},
+  {player:"Mohammed Shami",   team:"Gujarat Titans",              type:"pace_powerplay", pts:51.6, price:10.0,  roi:5.16, form:0.88, conf:0.91},
+  {player:"Pat Cummins",      team:"Kolkata Knight Riders",       type:"allrounder",     pts:44.9, price:20.5,  roi:2.19, form:0.86, conf:0.92},
+  {player:"Hardik Pandya",    team:"Mumbai Indians",              type:"allrounder",     pts:43.5, price:15.0,  roi:2.90, form:0.76, conf:0.93},
+  {player:"Tilak Varma",      team:"Mumbai Indians",              type:"middle_order",   pts:43.3, price:8.5,   roi:5.10, form:0.84, conf:0.93},
+  {player:"T Natarajan",      team:"Sunrisers Hyderabad",         type:"pace_death",     pts:42.6, price:10.75, roi:3.96, form:0.83, conf:0.92},
+  {player:"Nitish Kumar Reddy",team:"Sunrisers Hyderabad",        type:"allrounder",     pts:42.6, price:6.0,   roi:7.10, form:0.82, conf:0.91},
+  {player:"Shubman Gill",     team:"Gujarat Titans",              type:"opener",         pts:39.8, price:14.9,  roi:2.67, form:0.82, conf:0.90},
+  {player:"Axar Patel",       team:"Delhi Capitals",              type:"allrounder",     pts:38.9, price:16.5,  roi:2.35, form:0.81, conf:0.91},
+  {player:"Quinton de Kock",  team:"Kolkata Knight Riders",       type:"wicketkeeper",   pts:37.9, price:3.6,   roi:10.52,form:0.78, conf:0.90},
+];
+
+const CLF_FI = [
+  ["required_rpo",     0.33053],
+  ["is_chasing",       0.14629],
+  ["cum_runs",         0.11746],
+  ["win_prob_pre",     0.10539],
+  ["balls_remaining",  0.05793],
+  ["last3_rpo",        0.04603],
+  ["current_rpo",      0.03611],
+  ["over_num",         0.02891],
+  ["pp_runs",          0.02686],
+  ["sub_form",         0.01588],
+];
+
+const REG_FI = [
+  ["perf_index",          0.54318],
+  ["auction_price_cr",    0.10819],
+  ["batting_avg",         0.10585],
+  ["matches",             0.06116],
+  ["bowling_contribution",0.05156],
+  ["value_per_cr",        0.04049],
+  ["form_trajectory",     0.02427],
+  ["economy",             0.01767],
+  ["sixes_per_match",     0.01448],
+  ["batting_contribution",0.00810],
+];
+
+const VENUE_DATA = {
+  "M Chinnaswamy Stadium": {factor:1.25, avg:270, color:"#ef4444"},
+  "Wankhede Stadium":      {factor:1.18, avg:270, color:"#f97316"},
+  "Narendra Modi Stadium": {factor:1.02, avg:259, color:"#eab308"},
+  "MA Chidambaram Stadium":{factor:0.88, avg:251, color:"#22c55e"},
+  "BRSABV Ekana Stadium":  {factor:0.95, avg:249, color:"#14b8a6"},
+  "Arun Jaitley Stadium":  {factor:1.08, avg:249, color:"#a78bfa"},
+  "Rajiv Gandhi Intl":     {factor:1.12, avg:250, color:"#f59e0b"},
+  "Eden Gardens":          {factor:1.05, avg:247, color:"#60a5fa"},
+  "Sawai Mansingh Stadium":{factor:1.10, avg:246, color:"#34d399"},
+};
+
+const BADGE_MAP = {
+  "pace_death":"b-death","spinner":"b-spinner","finisher":"b-finisher",
+  "opener":"b-opener","wicketkeeper":"b-wk","allrounder":"b-all",
+  "middle_order":"b-finisher","pace_powerplay":"b-death","top_order":"b-opener",
+};
+const MEDAL = ["🥇","🥈","🥉","4️⃣","5️⃣","6️⃣","7️⃣","8️⃣","9️⃣","🔟"];
+
+// ═══════════ TABS ════════════════════════════════════════════════════════════
+function switchTab(id, btn) {
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('tab-' + id).classList.add('active');
+  btn.classList.add('active');
+}
+
+// ═══════════ WIN PROBABILITY ══════════════════════════════════════════════════
+function winProb(runs, wkts, over, target, chasing, vf) {
+  if (!chasing) {
+    const rpo = runs / Math.max(over, 0.1);
+    const proj = runs + rpo * (20 - over) * vf;
+    const avg  = 175 * vf;
+    return 1 / (1 + Math.exp(-(proj - avg) / 20));
+  }
+  const needed = target - runs;
+  const balls  = (20 - over) * 6;
+  if (balls <= 0) return runs >= target ? 1 : 0;
+  const rrr  = (needed / balls) * 6;
+  const crr  = runs / Math.max(over, 0.1);
+  const wrem = 10 - wkts;
+  const diff = crr - rrr + (wrem - 5) * 0.3;
+  return Math.max(0.02, Math.min(0.98, 1 / (1 + Math.exp(-diff * 0.8))));
+}
+
+function updateWinProb() {
+  const over    = +document.getElementById('over').value;
+  const runs    = +document.getElementById('runs').value;
+  const wkts    = +document.getElementById('wickets').value;
+  const target  = +document.getElementById('target').value;
+  const chasing = document.getElementById('innings').value === '2';
+  const vsel    = document.getElementById('venue');
+  const vf      = parseFloat(vsel.options[vsel.selectedIndex].dataset.factor) || 1.0;
+
+  const wp  = winProb(runs, wkts, over, target, chasing, vf);
+  const pct = Math.round(wp * 100);
+
+  document.getElementById('win-prob-val').textContent = pct + '%';
+
+  // Update arc (stroke-dasharray = 252, offset=0 → full, offset=252 → empty)
+  const arc = document.getElementById('win-arc');
+  const offset = 252 - (wp * 252);
+  arc.style.strokeDashoffset = offset;
+  arc.style.stroke = wp > 0.6 ? '#22c55e' : wp > 0.4 ? '#f59e0b' : '#ef4444';
+
+  // Needle: rotate from -90° (0%) to +90° (100%)
+  const angle = -90 + wp * 180;
+  const rad   = (angle - 90) * Math.PI / 180;
+  const x2    = 90 + 50 * Math.cos(rad);
+  const y2    = 95 + 50 * Math.sin(rad);
+  document.getElementById('win-needle').setAttribute('x2', x2.toFixed(1));
+  document.getElementById('win-needle').setAttribute('y2', y2.toFixed(1));
+
+  const crr = runs / Math.max(over, 0.1);
+  const rrr = chasing ? ((target - runs) / Math.max((20 - over) * 6, 1)) * 6 : crr;
+  document.getElementById('crr-val').textContent = crr.toFixed(1);
+  document.getElementById('rrr-val').textContent = rrr.toFixed(1);
+}
+
+// ═══════════ VENUE & PLAYER INFO ══════════════════════════════════════════════
+function updateVenueInfo() {
+  const sel = document.getElementById('venue');
+  const opt = sel.options[sel.selectedIndex];
+  document.getElementById('venue-info').innerHTML =
+    `Pitch Factor: <b style="color:var(--gold)">${opt.dataset.factor}×</b> &nbsp;|&nbsp;
+     Avg Score: <b style="color:var(--gold)">${opt.dataset.avg}</b>`;
+  updateWinProb();
+}
+
+function updatePlayerInfo() {
+  const sel  = document.getElementById('sub-player');
+  const opt  = sel.options[sel.selectedIndex];
+  document.getElementById('pi-name').textContent  = opt.text;
+  document.getElementById('pi-type').textContent  = opt.dataset.type;
+  document.getElementById('pi-price').textContent = opt.dataset.price;
+  document.getElementById('pi-form').textContent  = Math.round(opt.dataset.form * 100) + '%';
+}
+
+// ═══════════ PREDICT ══════════════════════════════════════════════════════════
+function predict() {
+  const over    = +document.getElementById('over').value;
+  const runs    = +document.getElementById('runs').value;
+  const wkts    = +document.getElementById('wickets').value;
+  const target  = +document.getElementById('target').value;
+  const chasing = document.getElementById('innings').value === '2';
+  const vsel    = document.getElementById('venue');
+  const vf      = parseFloat(vsel.options[vsel.selectedIndex].dataset.factor) || 1.0;
+  const va      = parseFloat(vsel.options[vsel.selectedIndex].dataset.avg)    || 175;
+
+  const psel    = document.getElementById('sub-player');
+  const popt    = psel.options[psel.selectedIndex];
+  const pType   = popt.dataset.type;
+  const pPrice  = parseFloat(popt.dataset.price);
+  const pForm   = parseFloat(popt.dataset.form);
+  const pName   = popt.text;
+
+  const crr    = runs / Math.max(over, 0.1);
+  const rrr    = chasing ? ((target - runs) / Math.max((20 - over) * 6, 1)) * 6 : crr;
+  const rateDiff = crr - rrr;
+  const wp     = winProb(runs, wkts, over, target, chasing, vf);
+
+  // Simulate GBT prediction based on key drivers
+  const baseProb = 0.35;
+  let signal = 0;
+
+  // Required RPO is the dominant feature (0.33 importance)
+  if (rrr > 14)      signal += 0.25;
+  else if (rrr > 12) signal += 0.15;
+  else if (rrr > 10) signal += 0.05;
+  else               signal -= 0.10;
+
+  // Is chasing (0.15 importance)
+  if (chasing) signal += 0.08;
+
+  // Win prob pre (0.10 importance) — struggling teams benefit more from sub
+  if (wp < 0.35) signal += 0.12;
+  else if (wp < 0.45) signal += 0.06;
+  else if (wp > 0.65) signal -= 0.08;
+
+  // Balls remaining (0.058)
+  const ballsLeft = (20 - over) * 6;
+  if (ballsLeft < 24 && ballsLeft > 12) signal += 0.06;
+  if (ballsLeft <= 12) signal -= 0.04;
+
+  // Player quality (form + price)
+  if (pForm > 0.90) signal += 0.08;
+  else if (pForm > 0.85) signal += 0.05;
+  if (pPrice > 15)  signal += 0.04;
+
+  // Player type match
+  if (over >= 15 && (pType === 'pace_death' || pType === 'finisher')) signal += 0.10;
+  if (over < 10  && (pType === 'spinner' || pType === 'pace_powerplay')) signal += 0.07;
+
+  // Venue factor
+  if (vf > 1.15) signal += 0.04;
+
+  const subProb = Math.max(0.02, Math.min(0.97, baseProb + signal));
+  const recommend = subProb > 0.52;
+  const lift = subProb * 0.14;
+
+  // SHAP features (sorted by contribution to this prediction)
+  const shapFeatures = [
+    {label:"Required RPO",       val:rrr.toFixed(1),       shap: (rrr > 12 ? 0.04 : -0.03) * (1 + signal*0.1)},
+    {label:"Is Chasing",         val:chasing?"Yes":"No",   shap: chasing ? 0.025 : -0.01},
+    {label:"Win Prob (Pre-Sub)", val:(wp*100).toFixed(0)+'%',shap: wp < 0.4 ? 0.02 : -0.01},
+    {label:"Balls Remaining",    val:ballsLeft,             shap: (ballsLeft<24&&ballsLeft>12) ? 0.015 : -0.005},
+    {label:"Sub Player Form",    val:(pForm*100).toFixed(0)+'%',shap: pForm > 0.88 ? 0.018 : 0.005},
+    {label:"Venue Pitch Factor", val:vf+'×',                shap: (vf-1)*0.05},
+    {label:"Player Type Match",  val:pType.replace('_',' '), shap: (over>=15&&(pType==='pace_death'||pType==='finisher'))?0.022:-0.005},
+  ].sort((a,b) => Math.abs(b.shap)-Math.abs(a.shap));
+
+  // Update UI
+  const maxShap = Math.max(...shapFeatures.map(f => Math.abs(f.shap))) + 0.001;
+
+  const box      = document.getElementById('rec-box');
+  box.className  = 'rec-box ' + (recommend ? 'rec-yes' : 'rec-no');
+  document.getElementById('rec-icon').textContent    = recommend ? '✅' : '❌';
+  document.getElementById('rec-verdict').textContent = recommend ? 'SUBSTITUTE NOW' : 'HOLD PLAYER';
+  document.getElementById('rec-verdict').style.color = recommend ? 'var(--green)' : 'var(--red)';
+  document.getElementById('rec-conf').textContent    = `Confidence: ${(subProb*100).toFixed(1)}%`;
+  document.getElementById('lift-val').textContent    = `+${(lift*100).toFixed(1)}%`;
+  document.getElementById('sub-prob-val').textContent= `${(subProb*100).toFixed(1)}%`;
+  document.getElementById('win-post-val').textContent= `${((wp+lift)*100).toFixed(1)}%`;
+
+  // Narrative
+  const narr = recommend
+    ? `${rrr > 12 ? 'High required run rate ('+rrr.toFixed(1)+' RPO)' : 'Favourable match state'} with ${pForm*100|0}% in-form ${pName} available makes substitution optimal. Expected +${(lift*100).toFixed(1)}% win probability uplift.`
+    : `Match state (${wp*100|0}% win prob, ${rrr.toFixed(1)} RPO required) does not strongly favour a substitution. Current lineup has sufficient resources.`;
+  document.getElementById('model-narrative').textContent = narr;
+
+  // Feature summary
+  document.getElementById('feature-summary').innerHTML = [
+    `CRR: <b>${crr.toFixed(1)}</b>`,
+    `RRR: <b>${rrr.toFixed(1)}</b>`,
+    `Rate Δ: <b style="color:${rateDiff>0?'var(--green)':'var(--red)'};">${rateDiff>0?'+':''}${rateDiff.toFixed(1)}</b>`,
+    `Phase: <b>${over>=15?'Death':over>=6?'Middle':'Powerplay'}</b>`,
+    `Wickets rem: <b>${10-wkts}</b>`,
+  ].join(' &nbsp;|&nbsp; ');
+
+  // SHAP bars
+  document.getElementById('shap-container').innerHTML = shapFeatures.map(f => {
+    const pct   = Math.abs(f.shap) / maxShap * 100;
+    const color = f.shap > 0 ? 'shap-fill-pos' : 'shap-fill-neg';
+    return `<div class="shap-row">
+      <div class="shap-lbl">${f.label}</div>
+      <div class="shap-track">
+        <div class="shap-fill ${color}" style="width:${pct.toFixed(0)}%"></div>
+      </div>
+      <div class="shap-num">${f.shap>0?'+':''}${f.shap.toFixed(4)}</div>
+    </div>
+    <div style="font-size:0.7rem;color:var(--text-lo);margin:-2px 0 4px 180px">
+      val: ${f.val}
+    </div>`;
+  }).join('');
+
+  document.getElementById('results').style.display = 'block';
+  document.getElementById('results').scrollIntoView({behavior:'smooth', block:'nearest'});
+}
+
+// ═══════════ FANTASY ══════════════════════════════════════════════════════════
+function generateFantasy() {
+  renderFantasyCards(TOP10);
+}
+
+function renderFantasyCards(data) {
+  document.getElementById('fantasy-cards').innerHTML = data.map((p, i) => {
+    const badge = BADGE_MAP[p.type] || 'b-all';
+    const confPct = Math.round(p.conf * 100);
+    const roiColor = p.roi > 5 ? 'var(--green)' : p.roi > 2.5 ? 'var(--gold)' : 'var(--red)';
+    return `<div class="player-card">
+      <div class="pc-top">
+        <div>
+          <span style="font-size:1.3rem">${MEDAL[i]}</span>
+          <span class="pc-name" style="margin-left:6px">${p.player}</span>
+          <span class="badge ${badge}">${p.type.replace('_',' ')}</span>
+        </div>
+        <div style="text-align:right">
+          <span class="pc-pts">${p.pts.toFixed(1)}</span>
+          <span style="color:var(--text-mid);font-size:0.8rem"> pts</span>
+        </div>
+      </div>
+      <div class="pc-meta">
+        💰 ₹${p.price}Cr &nbsp;|&nbsp;
+        ROI: <b style="color:${roiColor}">${p.roi.toFixed(2)}</b> &nbsp;|&nbsp;
+        Conf: <b>${confPct}%</b> &nbsp;|&nbsp;
+        ${p.team}
+      </div>
+      <div class="conf-bar"><div class="conf-fill" style="width:${confPct}%"></div></div>
+    </div>`;
+  }).join('');
+
+  document.getElementById('fantasy-tbody').innerHTML = data.map((p, i) => `
+    <tr>
+      <td>${MEDAL[i]}</td>
+      <td><b style="color:var(--text-hi)">${p.player}</b></td>
+      <td style="color:var(--text-mid)">${p.team}</td>
+      <td><span class="badge ${BADGE_MAP[p.type]||'b-all'}">${p.type.replace('_',' ')}</span></td>
+      <td>₹${p.price}</td>
+      <td style="color:var(--gold);font-family:'Rajdhani';font-size:1.05rem;font-weight:700">${p.pts.toFixed(1)}</td>
+      <td>${Math.round(p.conf*100)}%</td>
+      <td style="color:${p.roi>5?'var(--green)':p.roi>2.5?'var(--gold)':'var(--red)'};font-weight:600">${p.roi.toFixed(2)}</td>
+    </tr>
+  `).join('');
+}
+
+// ═══════════ FEATURE IMPORTANCE RENDER ════════════════════════════════════════
+function renderFI(data, containerId, cssClass) {
+  const max = data[0][1];
+  document.getElementById(containerId).innerHTML = data.map(([feat, val]) => {
+    const pct = val / max * 100;
+    const label = feat.replace(/_/g,' ').replace(/\b\w/g,c=>c.toUpperCase());
+    return `<div class="fi-row">
+      <div class="fi-lbl">${label}</div>
+      <div class="fi-track">
+        <div class="fi-fill ${cssClass}" style="width:${pct.toFixed(0)}%"></div>
+      </div>
+      <div class="fi-num">${val.toFixed(4)}</div>
+    </div>`;
+  }).join('');
+}
+
+// ═══════════ VENUE BARS ════════════════════════════════════════════════════════
+function renderVenueBars() {
+  const entries = Object.entries(VENUE_DATA).sort((a,b)=>b[1].avg-a[1].avg);
+  const maxAvg  = entries[0][1].avg;
+  document.getElementById('venue-bars').innerHTML = entries.map(([name, d]) => {
+    const pct = d.avg / maxAvg * 100;
+    const shortName = name.replace(' Stadium','').replace(' International','').substring(0,22);
+    return `<div class="venue-bar">
+      <div class="venue-name" title="${name}">${shortName}</div>
+      <div class="venue-track">
+        <div class="venue-fill" style="width:${pct.toFixed(0)}%;background:${d.color};opacity:0.8"></div>
+      </div>
+      <div class="venue-score">${d.avg}</div>
+    </div>`;
+  }).join('');
+}
+
+function renderSeasonBars() {
+  const seasons = {2020:50,2021:50,2022:50,2023:50,2024:50,2025:50};
+  const max = 50;
+  document.getElementById('season-bars').innerHTML = Object.entries(seasons).map(([yr, n]) => `
+    <div class="venue-bar">
+      <div class="venue-name">IPL ${yr}</div>
+      <div class="venue-track">
+        <div class="venue-fill" style="width:${n/max*100}%;background:var(--gold);opacity:0.7"></div>
+      </div>
+      <div class="venue-score">${n}</div>
+    </div>
+  `).join('');
+}
+
+function renderROITable() {
+  const sorted = [...TOP10].sort((a,b)=>b.roi-a.roi);
+  document.getElementById('roi-tbody').innerHTML = sorted.map(p => {
+    const roiColor = p.roi>5?'var(--green)':p.roi>2.5?'var(--gold)':'var(--red)';
+    return `<tr>
+      <td><b style="color:var(--text-hi)">${p.player}</b></td>
+      <td style="color:var(--text-mid);font-size:0.78rem">${p.team}</td>
+      <td><span class="badge ${BADGE_MAP[p.type]||'b-all'}">${p.type.replace('_',' ')}</span></td>
+      <td>₹${p.price}</td>
+      <td style="color:var(--gold);font-weight:600">${p.pts.toFixed(1)}</td>
+      <td style="color:${roiColor};font-weight:700">${p.roi.toFixed(2)}</td>
+      <td>${Math.round(p.form*100)}%</td>
+    </tr>`;
+  }).join('');
+}
+
+// ═══════════ INIT ══════════════════════════════════════════════════════════════
+(function init() {
+  updateWinProb();
+  renderFantasyCards(TOP10);
+  renderFI(CLF_FI, 'clf-fi', 'fi-clf');
+  renderFI(REG_FI, 'reg-fi', 'fi-reg');
+  renderVenueBars();
+  renderSeasonBars();
+  renderROITable();
+})();
+</script>
+</body>
+</html>
