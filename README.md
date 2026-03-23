@@ -1,11 +1,9 @@
 # 🏏 IPL Impact Player Analytics Engine
 ### Real-time Substitution Intelligence + Fantasy Value Prediction
 
-> **R&D Engineer Portfolio Project** | IPL 2025 Season | GradientBoosting + SHAP Explainability
-
 ---
 
-## 🎯 Problem Statement
+## 🎯 The Main Problem 
 
 Coaches and fantasy players lose **5–10% win probability** because they guess Impact Player swaps mid-innings.
 Fantasy apps give static points, not dynamic projections.
@@ -13,7 +11,7 @@ Fantasy apps give static points, not dynamic projections.
 **This tool:**
 - Predicts optimal Impact Player substitution timing with **>5% win-probability lift**
 - Recommends **top 5 fantasy picks** for any match with confidence scores
-- Explains every decision with **SHAP values** — production-grade explainability
+- Explains every decision with **SHAP values** — justifying every  prediction
 
 ---
 
@@ -158,10 +156,6 @@ ipl_impact_player/
 
 ---
 
-## 📈 Resume Signal
-
-- **Impact Player rule** integration (2023+) shows awareness of evolving cricket strategy
-- **Dual-model architecture** (classification + regression) demonstrates ML breadth
-- **SHAP explainability** is a top hiring signal for R&D/ML roles
-- **End-to-end pipeline** (data → features → models → dashboard → deploy) shows production mindset
-- **ROC-AUC 0.9255** on a custom sports analytics task is a strong portfolio benchmark
+<div align="center">
+  <p>Built with ❤️ by RajXtreme</p>
+</div>
