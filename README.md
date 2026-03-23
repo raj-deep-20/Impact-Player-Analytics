@@ -122,10 +122,10 @@ Dream11 scoring proxy (per match):
 
 ```
 ipl_impact_player/
-├── src/
-│   ├── data_generator.py      # Synthetic IPL data (mirrors Kaggle structure)
-│   ├── feature_engineering.py # 25+ features, DL win probability
-│   └── models.py              # Classifier + Regressor + SHAP explainability
+|
+├── data_generator.py      # Synthetic IPL data (mirrors Kaggle structure)
+├── feature_engineering.py # 25+ features, DL win probability
+├── models.py              # Classifier + Regressor + SHAP explainability
 ├── data/
 │   ├── deliveries.csv         # 73k ball-by-ball rows
 │   ├── matches.csv            # 300 match records
