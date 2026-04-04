@@ -57,7 +57,7 @@ STREAMLIT DASHBOARD  (app.py)
 - **Data**: IPL 2020–2025 ball-by-ball (73k deliveries), Impact Player substitutions (2023+)
 - **Features**: 25 engineered signals per match-state snapshot
 - **Dashboard**: Streamlit + custom CSS, Plotly charts
-- **Deploy**: Streamlit Cloud (one-click)
+- **Deploy**: Not done
 
 ---
 
