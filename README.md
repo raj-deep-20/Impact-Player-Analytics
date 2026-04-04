@@ -46,7 +46,7 @@ SHAP EXPLAINABILITY
   "+12% win prob because death bowler on high-scoring pitch"
         ↓
 STREAMLIT DASHBOARD  (app.py)
-  Live predictor · Fantasy ranker · SHAP viz · Data explorer
+  Live predictor | Fantasy ranker 
 ```
 
 ---
